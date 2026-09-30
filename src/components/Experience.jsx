@@ -8,11 +8,11 @@ export default function Experience({ onOpenCertificate }) {
   const experiences = [
     {
       company: 'Vinsup Infotech Private Limited',
-      role: 'DevStack Full Stack Internshipship',
-      period: 'Internshipshipship Period',
+      role: 'DevStack Full Stack Internship',
+      period: 'Internship Period',
       location: 'Tamil Nadu, India',
       badge: 'Full Stack MERN',
-      certImage: '/assets/certificates/vinsup_Internshipshipship.jpeg',
+      certImage: '/assets/certificates/vinsup_internship.jpeg',
       summary: 'Architected and built full-stack MERN stack modules, engineered RESTful API endpoints, and integrated responsive frontend views.',
       highlights: [
         'Engineered responsive web applications utilizing React.js, Node.js, Express, and MongoDB.',
@@ -25,11 +25,11 @@ export default function Experience({ onOpenCertificate }) {
     },
     {
       company: 'Zidio Development',
-      role: 'Web Development Internshipship (3 Months)',
+      role: 'Web Development Internship (3 Months)',
       period: '3 Months Intensive',
       location: 'Remote / Hybrid',
       badge: 'Frontend & APIs',
-      certImage: '/assets/certificates/zidio_Internshipshipship.jpeg',
+      certImage: '/assets/certificates/zidio_internship.jpeg',
       summary: 'Developed rich, interactive UI components and streamlined client-server state synchronization with modern JavaScript.',
       highlights: [
         'Built dynamic, responsive web interfaces with pixel-perfect design accuracy and fluid animations.',
@@ -42,11 +42,11 @@ export default function Experience({ onOpenCertificate }) {
     },
     {
       company: 'NoviTech R&D Private Limited',
-      role: 'Web Development Internshipship',
-      period: 'Internshipshipship & R&D Projects',
+      role: 'Web Development Internship',
+      period: 'Internship & R&D Projects',
       location: 'Tamil Nadu, India',
       badge: 'MERN & UI Engineering',
-      certImage: '/assets/certificates/novitech_Internshipshipship.jpeg',
+      certImage: '/assets/certificates/novitech_internship.jpeg',
       summary: 'Engineered responsive web layouts, mastered modern debugging tools, and contributed to full stack client modules.',
       highlights: [
         'Developed clean, structured web applications adhering to modern UX/UI guidelines.',
@@ -59,11 +59,11 @@ export default function Experience({ onOpenCertificate }) {
     },
     {
       company: 'SkillForge E-Learning Solutions',
-      role: 'Web Development Internshipship',
+      role: 'Web Development Internship',
       period: 'Web Systems Track',
       location: 'Remote',
       badge: 'Web Systems',
-      certImage: '/assets/certificates/skillforge_Internshipshipship.jpeg',
+      certImage: '/assets/certificates/skillforge_internship.jpeg',
       summary: 'Engineered interactive e-learning and portal components with emphasis on accessibility, performance, and user engagement.',
       highlights: [
         'Created responsive e-learning web interfaces and interactive quiz/content components.',
@@ -91,7 +91,7 @@ export default function Experience({ onOpenCertificate }) {
             <span>CAREER MILESTONES</span>
           </div>
           <h2 className="section-title">
-            Internshipshipship & <span className="gradient-text">Work Experience</span>
+            Internship & <span className="gradient-text">Work Experience</span>
           </h2>
           <p className="section-subtitle">
             Hands-on professional engineering experience across fast-paced technology firms, building real-world MERN applications and scalable web systems.

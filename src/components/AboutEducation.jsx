@@ -6,7 +6,7 @@ export default function AboutEducation() {
   const [activeTab, setActiveTab] = useState('education');
 
   const stats = [
-    { label: 'Internshipshipships Completed', value: '4+', icon: <Briefcase size={22} color="#00f2fe" />, color: '#00f2fe' },
+    { label: 'Internships Completed', value: '4+', icon: <Briefcase size={22} color="#00f2fe" />, color: '#00f2fe' },
     { label: 'Projects Engineered', value: '10+', icon: <Code size={22} color="#a855f7" />, color: '#a855f7' },
     { label: 'Certifications Earned', value: '8+', icon: <Award size={22} color="#ec4899" />, color: '#ec4899' },
     { label: 'Academic CGPA', value: '7.2', icon: <GraduationCap size={22} color="#10b981" />, color: '#10b981' },
@@ -35,7 +35,7 @@ export default function AboutEducation() {
     { title: 'Full Stack Problem Solving', desc: 'Transforming complex client workflows into intuitive, performant web applications.' },
     { title: 'Rapid Tech Adaptability', desc: 'Quickly mastering new frameworks, libraries, and cloud infrastructures like Docker and AWS.' },
     { title: 'Clean Architecture Mindset', desc: 'Writing maintainable, modular, and DRY code with comprehensive error handling.' },
-    { title: 'Effective Communication', desc: 'Clear collaboration across multidisciplinary teams during Internshipshipships and team sprints.' },
+    { title: 'Effective Communication', desc: 'Clear collaboration across multidisciplinary teams during internships and team sprints.' },
   ];
 
   return (
@@ -137,7 +137,7 @@ export default function AboutEducation() {
               </p>
 
               <p style={{ color: '#94a3b8', fontSize: '0.975rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                Throughout my academic tenure at <strong style={{ color: '#38bdf8' }}>SRM Trichy Arts and Science College</strong> and multiple industry Internshipshipships at <span style={{ color: '#cbd5e1' }}>Vinsup Infotech, Zidio, NoviTech, and SkillForge</span>, I have transformed abstract business ideas into production-ready web apps.
+                Throughout my academic tenure at <strong style={{ color: '#38bdf8' }}>SRM Trichy Arts and Science College</strong> and multiple industry internships at <span style={{ color: '#cbd5e1' }}>Vinsup Infotech, Zidio, NoviTech, and SkillForge</span>, I have transformed abstract business ideas into production-ready web apps.
                 I am currently expanding my capabilities into <strong style={{ color: '#c084fc' }}>Python, Artificial Intelligence, Machine Learning, and Deep Learning,</strong> while strengthening my full-stack development and software engineering skills.
               </p>
 

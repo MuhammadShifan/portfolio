@@ -91,7 +91,7 @@ export default function Contact() {
       });
 
       // 2. Send to Local Backend (For MongoDB Storage)
-      const dbResponse = await fetch("http://localhost:5000/api/contact", {
+      const dbResponse = await fetch("https://portfolio-ru2d.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -354,7 +354,7 @@ export default function Contact() {
               >
                 <div className="status-dot" style={{ flexShrink: 0 }}></div>
                 <span style={{ fontSize: '0.85rem', color: '#34d399', fontWeight: '600' }}>
-                  Open for Full Stack Developer, Frontend Engineer, and MERN Internshipship roles.
+                  Open for Full Stack Developer, Frontend Engineer, and MERN Internship roles.
                 </span>
               </div> */}
             </div>

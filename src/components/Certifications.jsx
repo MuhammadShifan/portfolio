@@ -7,7 +7,7 @@ export default function Certifications({ onSelectCertificate, certificates }) {
 
   const filterTabs = [
     { id: 'all', label: 'All 8 Certificates' },
-    { id: 'Internshipshipship', label: 'Internshipshipship Credentials' },
+    { id: 'internship', label: 'Internship Credentials' },
     { id: 'course', label: 'Masterclasses & Courses' },
   ];
 
@@ -28,7 +28,7 @@ export default function Certifications({ onSelectCertificate, certificates }) {
             Certifications & <span className="gradient-text">Masterclasses</span>
           </h2>
           <p className="section-subtitle">
-            A verified portfolio of 8 industry certifications, Internshipshipship completions, and specialized Full Stack engineering masterclasses.
+            A verified portfolio of 8 industry certifications, internship completions, and specialized Full Stack engineering masterclasses.
           </p>
         </div>
 
