@@ -81,56 +81,39 @@ export default function Hero() {
   };
 
   return (
-    <section id="hero" className="section" style={{ paddingTop: '8.5rem', minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
+    <section id="hero" className="section" style={{ paddingTop: 'clamp(6.5rem, 12vw, 8.5rem)', minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
       <div className="container">
         <div
           style={{
             display: 'grid',
             gridTemplateColumns: '1fr',
-            gap: '3.5rem',
+            gap: '2.5rem',
             alignItems: 'center',
           }}
           className="hero-grid"
         >
           {/* Left Column: Hero Content */}
-          <div style={{ position: 'relative', zIndex: 2 }}>
-            {/* Status Badge */}
-            {/* <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
-              <div className="status-badge">
-                <span className="status-dot"></span>
-              </div>
-              <div
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.4rem',
-                  padding: '0.35rem 0.85rem',
-                  borderRadius: '9999px',
-                  background: 'rgba(168, 85, 247, 0.1)',
-                  border: '1px solid rgba(168, 85, 247, 0.3)',
-                  color: '#c084fc',
-                  fontFamily: 'var(--font-mono)',
-                  fontSize: '0.8rem',
-                  fontWeight: '600',
-                }}
-              >
-                <Terminal size={14} />
-                <span>MERN STACK</span>
-              </div>
-            </div> */}
-
+          <div className="hero-content-col" style={{ position: 'relative', zIndex: 2 }}>
             {/* Main Heading */}
             <h1
+              className="hero-heading"
               style={{
-                fontSize: 'clamp(2.5rem, 5.5vw, 4.25rem)',
                 fontWeight: '900',
-                lineHeight: 1.1,
+                lineHeight: 1.15,
                 marginBottom: '1.25rem',
                 letterSpacing: '-0.03em',
               }}
             >
               Hi, I'm{' '}
-              <span className="gradient-text">Muhammad Shifan S</span>
+              <span
+                className="gradient-text hero-name"
+                style={{
+                  whiteSpace: 'nowrap',
+                  display: 'inline-block',
+                }}
+              >
+                Muhammad Shifan S
+              </span>
             </h1>
 
             {/* Dynamic Role Subtitle */}
@@ -357,11 +340,13 @@ export default function Hero() {
 
           {/* Right Column: 3D Floating Avatar with Interactive Parallax */}
           <div
+            className="hero-avatar-col"
             style={{
               position: 'relative',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
+              width: '100%',
             }}
           >
             {/* Ambient Radial Glow Rings */}
@@ -450,7 +435,7 @@ export default function Hero() {
                     bottom: '-14px',
                     left: '50%',
                     transform: 'translateX(-50%)',
-                    padding: '0.45rem 1.25rem',
+                    padding: '0.45rem 1.15rem',
                     borderRadius: '9999px',
                     background: 'rgba(7, 12, 27, 0.92)',
                     border: '1px solid rgba(0, 242, 254, 0.5)',
@@ -460,14 +445,16 @@ export default function Hero() {
                     gap: '0.5rem',
                     color: '#00f2fe',
                     fontWeight: '700',
-                    fontSize: '0.82rem',
+                    fontSize: 'clamp(0.7rem, 2.4vw, 0.82rem)',
                     fontFamily: 'var(--font-mono)',
                     backdropFilter: 'blur(12px)',
                     whiteSpace: 'nowrap',
+                    maxWidth: '92%',
+                    justifyContent: 'center',
                   }}
                 >
-                  <span className="status-dot"></span>
-                  <span>MERN STACK • LIVE DEV ENVIRONMENT</span>
+                  <span className="status-dot" style={{ flexShrink: 0 }}></span>
+                  <span style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>MERN STACK • LIVE DEV ENVIRONMENT</span>
                 </div>
               </div>
             </div>
@@ -476,9 +463,37 @@ export default function Hero() {
       </div>
 
       <style>{`
+        .hero-heading {
+          font-size: clamp(1.85rem, 5.8vw, 4.25rem);
+        }
+        .hero-name {
+          white-space: nowrap;
+          display: inline-block;
+        }
+        @media (max-width: 480px) {
+          .hero-heading {
+            font-size: clamp(1.6rem, 6.8vw, 2.3rem);
+          }
+        }
+        @media (max-width: 1023px) {
+          .hero-avatar-col {
+            order: 1;
+            margin-bottom: 1rem;
+          }
+          .hero-content-col {
+            order: 2;
+          }
+        }
         @media (min-width: 1024px) {
           .hero-grid {
             grid-template-columns: 1.15fr 0.85fr !important;
+            gap: 3.5rem !important;
+          }
+          .hero-content-col {
+            order: 1;
+          }
+          .hero-avatar-col {
+            order: 2;
           }
         }
         .social-hover:hover {

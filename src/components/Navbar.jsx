@@ -43,7 +43,10 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleSoundToggle = () => {
+  const handleSoundToggle = (e) => {
+    if (e && e.type === 'touchend' && e.cancelable) {
+      e.preventDefault();
+    }
     const newState = soundFx.toggle();
     setSoundEnabled(newState);
   };
@@ -197,6 +200,7 @@ export default function Navbar() {
             {/* Audio Toggle */}
             <button
               onClick={handleSoundToggle}
+              onTouchEnd={handleSoundToggle}
               title={soundEnabled ? 'Mute Sound FX' : 'Enable Sound FX'}
               aria-label="Toggle Sound Effects"
               style={{
@@ -309,6 +313,44 @@ export default function Navbar() {
                   </li>
                 );
               })}
+              {/* Sound FX Toggle inside mobile drawer */}
+              <li>
+                <button
+                  onClick={handleSoundToggle}
+                  onTouchEnd={handleSoundToggle}
+                  style={{
+                    width: '100%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    padding: '0.75rem 1rem',
+                    borderRadius: '0.75rem',
+                    fontSize: '0.95rem',
+                    fontWeight: '500',
+                    color: soundEnabled ? '#00f2fe' : '#94a3b8',
+                    background: soundEnabled ? 'rgba(0, 242, 254, 0.08)' : 'rgba(255, 255, 255, 0.03)',
+                    border: soundEnabled ? '1px solid rgba(0, 242, 254, 0.3)' : '1px solid rgba(255, 255, 255, 0.06)',
+                  }}
+                >
+                  <span style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+                    {soundEnabled ? <Volume2 size={18} color="#00f2fe" /> : <VolumeX size={18} color="#94a3b8" />}
+                    <span>Sound Effects</span>
+                  </span>
+                  <span
+                    style={{
+                      fontSize: '0.75rem',
+                      fontFamily: 'var(--font-mono)',
+                      padding: '0.2rem 0.6rem',
+                      borderRadius: '9999px',
+                      background: soundEnabled ? 'rgba(0, 242, 254, 0.2)' : 'rgba(255, 255, 255, 0.08)',
+                      color: soundEnabled ? '#00f2fe' : '#64748b',
+                      fontWeight: '700',
+                    }}
+                  >
+                    {soundEnabled ? 'ON' : 'OFF'}
+                  </span>
+                </button>
+              </li>
               <li style={{ marginTop: '0.5rem', paddingTop: '0.75rem', borderTop: '1px solid rgba(255, 255, 255, 0.1)' }}>
                 <a
                   href="#contact"

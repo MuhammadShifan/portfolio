@@ -135,8 +135,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section" style={{ position: 'relative' }}>
-      <div className="container">
+    <section id="contact" className="section" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div className="container" style={{ width: '100%', maxWidth: '1280px', boxSizing: 'border-box' }}>
         {/* Section Header */}
         <div className="section-header">
           <div className="section-badge">
@@ -156,19 +156,23 @@ export default function Contact() {
           style={{
             display: 'grid',
             gridTemplateColumns: '1fr',
-            gap: '3rem',
+            gap: '2.5rem',
             alignItems: 'start',
+            width: '100%',
+            boxSizing: 'border-box',
           }}
           className="contact-grid"
         >
           {/* Left Column: Direct Info & Quick Copy Cards */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', width: '100%', minWidth: 0, boxSizing: 'border-box' }}>
             <div
               className="glass-panel"
               style={{
-                padding: '2rem',
+                padding: 'clamp(1.25rem, 3.5vw, 2rem)',
                 border: '1px solid rgba(0, 242, 254, 0.25)',
                 background: 'linear-gradient(145deg, rgba(0, 242, 254, 0.04) 0%, rgba(15, 23, 42, 0.8) 100%)',
+                width: '100%',
+                boxSizing: 'border-box',
               }}
             >
               <h3 style={{ fontSize: '1.4rem', color: '#fff', marginBottom: '0.5rem' }}>
@@ -178,7 +182,7 @@ export default function Contact() {
                 Full Stack MERN Developer • Software Engineer
               </p>
 
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', width: '100%', boxSizing: 'border-box' }}>
                 {/* Email Direct Item */}
                 <div
                   style={{
@@ -189,9 +193,13 @@ export default function Contact() {
                     borderRadius: '0.85rem',
                     background: 'rgba(255, 255, 255, 0.03)',
                     border: '1px solid rgba(255, 255, 255, 0.07)',
+                    width: '100%',
+                    boxSizing: 'border-box',
+                    gap: '0.75rem',
+                    flexWrap: 'wrap',
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', minWidth: 0, flex: '1 1 180px' }}>
                     <div
                       style={{
                         width: '42px',
@@ -203,15 +211,24 @@ export default function Contact() {
                         alignItems: 'center',
                         justifyContent: 'center',
                         color: '#00f2fe',
+                        flexShrink: 0,
                       }}
                     >
                       <Mail size={18} />
                     </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: '#94a3b8', textTransform: 'uppercase', fontFamily: 'var(--font-mono)' }}>
+                    <div style={{ minWidth: 0, flex: 1, overflow: 'hidden' }}>
+                      <span style={{ fontSize: '0.75rem', color: '#94a3b8', textTransform: 'uppercase', fontFamily: 'var(--font-mono)', display: 'block' }}>
                         Email Address
                       </span>
-                      <div style={{ color: '#fff', fontWeight: '600', fontSize: '0.92rem' }}>
+                      <div
+                        style={{
+                          color: '#fff',
+                          fontWeight: '600',
+                          fontSize: 'clamp(0.8rem, 2.8vw, 0.92rem)',
+                          overflowWrap: 'break-word',
+                          wordBreak: 'break-word',
+                        }}
+                      >
                         muhammasshifan@gmail.com
                       </div>
                     </div>
@@ -228,11 +245,12 @@ export default function Contact() {
                       color: copiedField === 'email' ? '#34d399' : '#cbd5e1',
                       fontSize: '0.8rem',
                       fontWeight: '600',
-                      display: 'flex',
+                      display: 'inline-flex',
                       alignItems: 'center',
                       gap: '0.35rem',
                       cursor: 'pointer',
                       transition: 'all 0.2s ease',
+                      flexShrink: 0,
                     }}
                   >
                     {copiedField === 'email' ? <Check size={14} /> : <Copy size={14} />}
@@ -250,9 +268,13 @@ export default function Contact() {
                     borderRadius: '0.85rem',
                     background: 'rgba(255, 255, 255, 0.03)',
                     border: '1px solid rgba(255, 255, 255, 0.07)',
+                    width: '100%',
+                    boxSizing: 'border-box',
+                    gap: '0.75rem',
+                    flexWrap: 'wrap',
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', minWidth: 0, flex: '1 1 180px' }}>
                     <div
                       style={{
                         width: '42px',
@@ -264,15 +286,16 @@ export default function Contact() {
                         alignItems: 'center',
                         justifyContent: 'center',
                         color: '#a855f7',
+                        flexShrink: 0,
                       }}
                     >
                       <Phone size={18} />
                     </div>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: '#94a3b8', textTransform: 'uppercase', fontFamily: 'var(--font-mono)' }}>
+                    <div style={{ minWidth: 0, flex: 1, overflow: 'hidden' }}>
+                      <span style={{ fontSize: '0.75rem', color: '#94a3b8', textTransform: 'uppercase', fontFamily: 'var(--font-mono)', display: 'block' }}>
                         Phone & WhatsApp
                       </span>
-                      <div style={{ color: '#fff', fontWeight: '600', fontSize: '0.92rem' }}>
+                      <div style={{ color: '#fff', fontWeight: '600', fontSize: 'clamp(0.82rem, 2.8vw, 0.92rem)' }}>
                         +91 6381403151
                       </div>
                     </div>
@@ -289,96 +312,53 @@ export default function Contact() {
                       color: copiedField === 'phone' ? '#34d399' : '#cbd5e1',
                       fontSize: '0.8rem',
                       fontWeight: '600',
-                      display: 'flex',
+                      display: 'inline-flex',
                       alignItems: 'center',
                       gap: '0.35rem',
                       cursor: 'pointer',
                       transition: 'all 0.2s ease',
+                      flexShrink: 0,
                     }}
                   >
                     {copiedField === 'phone' ? <Check size={14} /> : <Copy size={14} />}
                     <span>{copiedField === 'phone' ? 'Copied' : 'Copy'}</span>
                   </button>
                 </div>
-
-                {/* Location Item */}
-                {/* <div
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.85rem',
-                    padding: '1rem',
-                    borderRadius: '0.85rem',
-                    background: 'rgba(255, 255, 255, 0.03)',
-                    border: '1px solid rgba(255, 255, 255, 0.07)',
-                  }}
-                >
-                  <div
-                    style={{
-                      width: '42px',
-                      height: '42px',
-                      borderRadius: '10px',
-                      background: 'rgba(16, 185, 129, 0.12)',
-                      border: '1px solid rgba(16, 185, 129, 0.3)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      color: '#10b981',
-                    }}
-                  >
-                    <MapPin size={18} />
-                  </div>
-                  <div>
-                    <span style={{ fontSize: '0.75rem', color: '#94a3b8', textTransform: 'uppercase', fontFamily: 'var(--font-mono)' }}>
-                      Location
-                    </span>
-                    <div style={{ color: '#fff', fontWeight: '600', fontSize: '0.92rem' }}>
-                      Tamil Nadu, India (Available Worldwide / Remote)
-                    </div>
-                  </div>
-                </div> */}
               </div>
-
-              {/* Status Box */}
-              {/* <div
-                style={{
-                  marginTop: '1.75rem',
-                  padding: '1rem',
-                  borderRadius: '0.85rem',
-                  background: 'rgba(16, 185, 129, 0.08)',
-                  border: '1px solid rgba(16, 185, 129, 0.25)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.75rem',
-                }}
-              >
-                <div className="status-dot" style={{ flexShrink: 0 }}></div>
-                <span style={{ fontSize: '0.85rem', color: '#34d399', fontWeight: '600' }}>
-                  Open for Full Stack Developer, Frontend Engineer, and MERN Internship roles.
-                </span>
-              </div> */}
             </div>
 
             {/* Quick Presets */}
-            <div className="glass-panel" style={{ padding: '1.5rem' }}>
+            <div
+              className="glass-panel"
+              style={{
+                padding: 'clamp(1rem, 3.5vw, 1.5rem)',
+                width: '100%',
+                boxSizing: 'border-box',
+              }}
+            >
               <span style={{ fontSize: '0.8rem', color: '#94a3b8', fontFamily: 'var(--font-mono)', textTransform: 'uppercase', display: 'block', marginBottom: '0.75rem' }}>
                 Quick Subject Suggestions:
               </span>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', width: '100%', boxSizing: 'border-box' }}>
                 {presets.map((preset) => (
                   <button
                     key={preset}
                     onClick={() => handlePresetClick(preset)}
                     onMouseEnter={() => soundFx.playHover()}
                     style={{
-                      padding: '0.4rem 0.85rem',
+                      padding: '0.45rem 0.85rem',
                       borderRadius: '9999px',
                       background: formData.subject === preset ? 'rgba(0, 242, 254, 0.2)' : 'rgba(255, 255, 255, 0.04)',
                       border: formData.subject === preset ? '1px solid #00f2fe' : '1px solid rgba(255, 255, 255, 0.08)',
-                      color: formData.subject === preset ? '#00f2fe' : '#94a3b8',
-                      fontSize: '0.8rem',
+                      color: formData.subject === preset ? '#00f2fe' : '#cbd5e1',
+                      fontSize: 'clamp(0.75rem, 2.5vw, 0.8rem)',
                       cursor: 'pointer',
                       transition: 'all 0.2s ease',
+                      textAlign: 'left',
+                      maxWidth: '100%',
+                      boxSizing: 'border-box',
+                      whiteSpace: 'normal',
+                      lineHeight: 1.35,
                     }}
                   >
                     + {preset}
@@ -392,10 +372,13 @@ export default function Contact() {
           <div
             className="glass-panel"
             style={{
-              padding: '2.5rem',
+              padding: 'clamp(1.25rem, 4vw, 2.5rem)',
               border: '1px solid rgba(255, 255, 255, 0.12)',
               background: 'linear-gradient(145deg, rgba(15, 23, 42, 0.85) 0%, rgba(10, 15, 30, 0.8) 100%)',
               boxShadow: '0 20px 50px -15px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 242, 254, 0.1)',
+              width: '100%',
+              maxWidth: '100%',
+              boxSizing: 'border-box',
             }}
           >
             {status === 'success' ? (
@@ -408,6 +391,8 @@ export default function Contact() {
                   alignItems: 'center',
                   gap: '1.25rem',
                   animation: 'fadeIn 0.3s ease-out',
+                  width: '100%',
+                  boxSizing: 'border-box',
                 }}
               >
                 <div
@@ -444,9 +429,9 @@ export default function Contact() {
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} noValidate>
+              <form onSubmit={handleSubmit} noValidate style={{ width: '100%', boxSizing: 'border-box' }}>
                 <div style={{ marginBottom: '1.75rem' }}>
-                  <h3 style={{ fontSize: '1.5rem', color: '#fff', fontWeight: '800', marginBottom: '0.35rem' }}>
+                  <h3 style={{ fontSize: 'clamp(1.25rem, 3.5vw, 1.5rem)', color: '#fff', fontWeight: '800', marginBottom: '0.35rem' }}>
                     Send Direct Message
                   </h3>
                   <p style={{ color: '#94a3b8', fontSize: '0.9rem' }}>
@@ -454,10 +439,10 @@ export default function Contact() {
                   </p>
                 </div>
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '1.35rem' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1.35rem', width: '100%', boxSizing: 'border-box' }}>
                   {/* Name Field with Floating Label */}
-                  <div className="floating-field">
-                    <div style={{ position: 'relative' }}>
+                  <div className="floating-field" style={{ width: '100%', boxSizing: 'border-box' }}>
+                    <div style={{ position: 'relative', width: '100%', boxSizing: 'border-box' }}>
                       <input
                         type="text"
                         name="name"
@@ -468,6 +453,8 @@ export default function Contact() {
                         onBlur={handleBlur}
                         style={{
                           width: '100%',
+                          maxWidth: '100%',
+                          boxSizing: 'border-box',
                           padding: '1.1rem 1rem 1.1rem 2.8rem',
                           background: 'rgba(255, 255, 255, 0.04)',
                           border: touched.name && errors.name ? '1px solid #ef4444' : '1px solid rgba(255, 255, 255, 0.12)',
@@ -503,8 +490,8 @@ export default function Contact() {
                   </div>
 
                   {/* Email Field with Floating Label */}
-                  <div className="floating-field">
-                    <div style={{ position: 'relative' }}>
+                  <div className="floating-field" style={{ width: '100%', boxSizing: 'border-box' }}>
+                    <div style={{ position: 'relative', width: '100%', boxSizing: 'border-box' }}>
                       <input
                         type="email"
                         name="email"
@@ -515,6 +502,8 @@ export default function Contact() {
                         onBlur={handleBlur}
                         style={{
                           width: '100%',
+                          maxWidth: '100%',
+                          boxSizing: 'border-box',
                           padding: '1.1rem 1rem 1.1rem 2.8rem',
                           background: 'rgba(255, 255, 255, 0.04)',
                           border: touched.email && errors.email ? '1px solid #ef4444' : '1px solid rgba(255, 255, 255, 0.12)',
@@ -550,8 +539,8 @@ export default function Contact() {
                   </div>
 
                   {/* Subject Field */}
-                  <div className="floating-field">
-                    <div style={{ position: 'relative' }}>
+                  <div className="floating-field" style={{ width: '100%', boxSizing: 'border-box' }}>
+                    <div style={{ position: 'relative', width: '100%', boxSizing: 'border-box' }}>
                       <input
                         type="text"
                         name="subject"
@@ -562,6 +551,8 @@ export default function Contact() {
                         onBlur={handleBlur}
                         style={{
                           width: '100%',
+                          maxWidth: '100%',
+                          boxSizing: 'border-box',
                           padding: '1.1rem 1rem 1.1rem 2.8rem',
                           background: 'rgba(255, 255, 255, 0.04)',
                           border: touched.subject && errors.subject ? '1px solid #ef4444' : '1px solid rgba(255, 255, 255, 0.12)',
@@ -597,8 +588,8 @@ export default function Contact() {
                   </div>
 
                   {/* Message Field */}
-                  <div className="floating-field">
-                    <div style={{ position: 'relative' }}>
+                  <div className="floating-field" style={{ width: '100%', boxSizing: 'border-box' }}>
+                    <div style={{ position: 'relative', width: '100%', boxSizing: 'border-box' }}>
                       <textarea
                         name="message"
                         id="contact-message"
@@ -609,6 +600,8 @@ export default function Contact() {
                         onBlur={handleBlur}
                         style={{
                           width: '100%',
+                          maxWidth: '100%',
+                          boxSizing: 'border-box',
                           padding: '1.1rem 1rem 1.1rem 2.8rem',
                           background: 'rgba(255, 255, 255, 0.04)',
                           border: touched.message && errors.message ? '1px solid #ef4444' : '1px solid rgba(255, 255, 255, 0.12)',
@@ -656,6 +649,7 @@ export default function Contact() {
                       fontSize: '1rem',
                       marginTop: '0.5rem',
                       cursor: status === 'submitting' ? 'not-allowed' : 'pointer',
+                      boxSizing: 'border-box',
                     }}
                   >
                     {status === 'submitting' ? (
@@ -681,6 +675,7 @@ export default function Contact() {
         @media (min-width: 1024px) {
           .contact-grid {
             grid-template-columns: 0.9fr 1.1fr !important;
+            gap: 3rem !important;
           }
         }
         .floating-field input:focus, .floating-field textarea:focus {
