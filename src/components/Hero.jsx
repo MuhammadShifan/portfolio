@@ -164,12 +164,14 @@ export default function Hero() {
 
             {/* Call to Action Buttons */}
             <div
+              className="hero-cta-container"
               style={{
                 display: 'flex',
                 alignItems: 'center',
                 gap: '1rem',
                 flexWrap: 'wrap',
                 marginBottom: '2.5rem',
+                width: '100%',
               }}
             >
               {/* CTA 1: View Projects */}
@@ -181,7 +183,7 @@ export default function Hero() {
                   document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
                 }}
                 onMouseEnter={() => soundFx.playHover()}
-                className="btn-primary"
+                className="btn-primary hero-btn"
               >
                 <span>View Projects</span>
                 <ArrowRight size={18} />
@@ -191,7 +193,7 @@ export default function Hero() {
               <button
                 onClick={handleDownloadResume}
                 onMouseEnter={() => soundFx.playHover()}
-                className="btn-secondary"
+                className="btn-secondary hero-btn"
                 style={{
                   borderColor: resumeDownloaded ? '#10b981' : undefined,
                   color: resumeDownloaded ? '#10b981' : undefined,
@@ -473,6 +475,13 @@ export default function Hero() {
         @media (max-width: 480px) {
           .hero-heading {
             font-size: clamp(1.6rem, 6.8vw, 2.3rem);
+          }
+          .hero-cta-container {
+            flex-direction: column;
+            align-items: stretch !important;
+          }
+          .hero-btn {
+            width: 100% !important;
           }
         }
         @media (max-width: 1023px) {
