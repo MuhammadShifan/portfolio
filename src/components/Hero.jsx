@@ -293,7 +293,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="https://wa.me/916381403151?text=Hi"
+                href="https://wa.me/916381403151?text=Hello Muhammad Shifan, I am reaching out from your portfolio website."
                 target="_blank"
                 rel="noopener noreferrer"
                 onMouseEnter={() => soundFx.playHover()}
