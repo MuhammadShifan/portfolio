@@ -137,7 +137,7 @@ export default function AboutEducation() {
               </p>
 
               <p style={{ color: '#94A3B8', fontSize: '0.975rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                Throughout my academic tenure at <strong style={{ color: '#06B6D4' }}>SRM Trichy Arts and Science College</strong> and multiple industry internships at <span style={{ color: '#F8FAFC' }}>Vinsup Infotech, Zidio, NoviTech, and SkillForge</span>, I have transformed abstract business ideas into production-ready web apps.
+                Throughout my academic tenure at <strong style={{ color: '#06B6D4' }}>SRM Trichy Arts and Science College</strong> and multiple industry internships at <span style={{ color: '#F8FAFC' }}>Vinsup Infotech, Zidio Development, NoviTech R&D Pvt Ltd, and SkillForge E-Learning Solutions Pvt Ltd</span>, I have transformed abstract business ideas into production-ready web apps.
                 I am currently expanding my capabilities into <strong style={{ color: '#06B6D4' }}>Python, Artificial Intelligence, Machine Learning, and Deep Learning,</strong> while strengthening my full-stack development and software engineering skills.
               </p>
 

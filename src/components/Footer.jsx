@@ -83,7 +83,7 @@ export default function Footer() {
                   boxShadow: '0 0 15px rgba(6, 182, 212, 0.25)',
                 }}
               >
-                MS
+                MDS
               </div>
               <h3 style={{ fontSize: '1.25rem', color: '#F8FAFC', fontWeight: '800' }}>
                 Muhammad Shifan S
@@ -91,7 +91,7 @@ export default function Footer() {
             </div>
 
             <p style={{ color: '#94A3B8', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
-              Entry-Level Full Stack Developer specialized in the MERN ecosystem. Building robust, accessible, and high-performance digital experiences.
+              Full Stack Developer specialized in the MERN ecosystem.
             </p>
 
             {/* Live IST Clock */}

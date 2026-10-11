@@ -15,7 +15,6 @@ export default function Hero() {
 
   const roles = [
     'Full Stack Developer {MERN}',
-    'App Developer {React Native}',
   ];
 
   // Typing effect loop
