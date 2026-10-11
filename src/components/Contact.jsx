@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import {
-  Send, Mail, Phone, MapPin, Check, Copy,
-  Sparkles, MessageSquare, User, AtSign, FileText, CheckCircle2, AlertCircle, Loader2
+  Send, Mail, Phone, Check, Copy,
+  MessageSquare, User, AtSign, FileText, CheckCircle2, AlertCircle, Loader2
 } from 'lucide-react';
-import { Github, Linkedin } from './Icons';
 import confetti from 'canvas-confetti';
 import { soundFx } from '../utils/sound';
 
@@ -108,7 +107,7 @@ export default function Contact() {
           particleCount: 100,
           spread: 80,
           origin: { y: 0.6 },
-          colors: ['#00f2fe', '#a855f7', '#10b981', '#ec4899'],
+          colors: ['#06B6D4', '#38bdf8', '#0891b2', '#F8FAFC'],
         });
       } else {
         setStatus('idle');
@@ -169,16 +168,16 @@ export default function Contact() {
               className="glass-panel"
               style={{
                 padding: 'clamp(1.25rem, 3.5vw, 2rem)',
-                border: '1px solid rgba(0, 242, 254, 0.25)',
-                background: 'linear-gradient(145deg, rgba(0, 242, 254, 0.04) 0%, rgba(15, 23, 42, 0.8) 100%)',
+                border: '1px solid rgba(148, 163, 184, 0.15)',
+                background: '#1E293B',
                 width: '100%',
                 boxSizing: 'border-box',
               }}
             >
-              <h3 style={{ fontSize: '1.4rem', color: '#fff', marginBottom: '0.5rem' }}>
+              <h3 style={{ fontSize: '1.4rem', color: '#F8FAFC', marginBottom: '0.5rem' }}>
                 Muhammad Shifan S
               </h3>
-              <p style={{ color: '#38bdf8', fontSize: '0.95rem', fontWeight: '600', marginBottom: '1.5rem' }}>
+              <p style={{ color: '#06B6D4', fontSize: '0.95rem', fontWeight: '600', marginBottom: '1.5rem' }}>
                 Full Stack MERN Developer • Software Engineer
               </p>
 
@@ -191,8 +190,8 @@ export default function Contact() {
                     justifyContent: 'space-between',
                     padding: '1rem',
                     borderRadius: '0.85rem',
-                    background: 'rgba(255, 255, 255, 0.03)',
-                    border: '1px solid rgba(255, 255, 255, 0.07)',
+                    background: 'rgba(15, 23, 42, 0.6)',
+                    border: '1px solid rgba(148, 163, 184, 0.15)',
                     width: '100%',
                     boxSizing: 'border-box',
                     gap: '0.75rem',
@@ -205,24 +204,24 @@ export default function Contact() {
                         width: '42px',
                         height: '42px',
                         borderRadius: '10px',
-                        background: 'rgba(0, 242, 254, 0.12)',
-                        border: '1px solid rgba(0, 242, 254, 0.3)',
+                        background: 'rgba(6, 182, 212, 0.12)',
+                        border: '1px solid rgba(6, 182, 212, 0.35)',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        color: '#00f2fe',
+                        color: '#06B6D4',
                         flexShrink: 0,
                       }}
                     >
                       <Mail size={18} />
                     </div>
                     <div style={{ minWidth: 0, flex: 1, overflow: 'hidden' }}>
-                      <span style={{ fontSize: '0.75rem', color: '#94a3b8', textTransform: 'uppercase', fontFamily: 'var(--font-mono)', display: 'block' }}>
+                      <span style={{ fontSize: '0.75rem', color: '#94A3B8', textTransform: 'uppercase', fontFamily: 'var(--font-mono)', display: 'block' }}>
                         Email Address
                       </span>
                       <div
                         style={{
-                          color: '#fff',
+                          color: '#F8FAFC',
                           fontWeight: '600',
                           fontSize: 'clamp(0.8rem, 2.8vw, 0.92rem)',
                           overflowWrap: 'break-word',
@@ -240,9 +239,9 @@ export default function Contact() {
                     style={{
                       padding: '0.45rem 0.75rem',
                       borderRadius: '8px',
-                      background: copiedField === 'email' ? 'rgba(16, 185, 129, 0.2)' : 'rgba(255, 255, 255, 0.06)',
-                      border: copiedField === 'email' ? '1px solid #10b981' : '1px solid rgba(255, 255, 255, 0.1)',
-                      color: copiedField === 'email' ? '#34d399' : '#cbd5e1',
+                      background: copiedField === 'email' ? 'rgba(6, 182, 212, 0.2)' : 'rgba(15, 23, 42, 0.8)',
+                      border: copiedField === 'email' ? '1px solid #06B6D4' : '1px solid rgba(148, 163, 184, 0.2)',
+                      color: copiedField === 'email' ? '#06B6D4' : '#94A3B8',
                       fontSize: '0.8rem',
                       fontWeight: '600',
                       display: 'inline-flex',
@@ -266,8 +265,8 @@ export default function Contact() {
                     justifyContent: 'space-between',
                     padding: '1rem',
                     borderRadius: '0.85rem',
-                    background: 'rgba(255, 255, 255, 0.03)',
-                    border: '1px solid rgba(255, 255, 255, 0.07)',
+                    background: 'rgba(15, 23, 42, 0.6)',
+                    border: '1px solid rgba(148, 163, 184, 0.15)',
                     width: '100%',
                     boxSizing: 'border-box',
                     gap: '0.75rem',
@@ -280,22 +279,22 @@ export default function Contact() {
                         width: '42px',
                         height: '42px',
                         borderRadius: '10px',
-                        background: 'rgba(168, 85, 247, 0.12)',
-                        border: '1px solid rgba(168, 85, 247, 0.3)',
+                        background: 'rgba(6, 182, 212, 0.12)',
+                        border: '1px solid rgba(6, 182, 212, 0.35)',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        color: '#a855f7',
+                        color: '#06B6D4',
                         flexShrink: 0,
                       }}
                     >
                       <Phone size={18} />
                     </div>
                     <div style={{ minWidth: 0, flex: 1, overflow: 'hidden' }}>
-                      <span style={{ fontSize: '0.75rem', color: '#94a3b8', textTransform: 'uppercase', fontFamily: 'var(--font-mono)', display: 'block' }}>
+                      <span style={{ fontSize: '0.75rem', color: '#94A3B8', textTransform: 'uppercase', fontFamily: 'var(--font-mono)', display: 'block' }}>
                         Phone & WhatsApp
                       </span>
-                      <div style={{ color: '#fff', fontWeight: '600', fontSize: 'clamp(0.82rem, 2.8vw, 0.92rem)' }}>
+                      <div style={{ color: '#F8FAFC', fontWeight: '600', fontSize: 'clamp(0.82rem, 2.8vw, 0.92rem)' }}>
                         +91 6381403151
                       </div>
                     </div>
@@ -307,9 +306,9 @@ export default function Contact() {
                     style={{
                       padding: '0.45rem 0.75rem',
                       borderRadius: '8px',
-                      background: copiedField === 'phone' ? 'rgba(16, 185, 129, 0.2)' : 'rgba(255, 255, 255, 0.06)',
-                      border: copiedField === 'phone' ? '1px solid #10b981' : '1px solid rgba(255, 255, 255, 0.1)',
-                      color: copiedField === 'phone' ? '#34d399' : '#cbd5e1',
+                      background: copiedField === 'phone' ? 'rgba(6, 182, 212, 0.2)' : 'rgba(15, 23, 42, 0.8)',
+                      border: copiedField === 'phone' ? '1px solid #06B6D4' : '1px solid rgba(148, 163, 184, 0.2)',
+                      color: copiedField === 'phone' ? '#06B6D4' : '#94A3B8',
                       fontSize: '0.8rem',
                       fontWeight: '600',
                       display: 'inline-flex',
@@ -332,11 +331,13 @@ export default function Contact() {
               className="glass-panel"
               style={{
                 padding: 'clamp(1rem, 3.5vw, 1.5rem)',
+                background: '#1E293B',
+                border: '1px solid rgba(148, 163, 184, 0.15)',
                 width: '100%',
                 boxSizing: 'border-box',
               }}
             >
-              <span style={{ fontSize: '0.8rem', color: '#94a3b8', fontFamily: 'var(--font-mono)', textTransform: 'uppercase', display: 'block', marginBottom: '0.75rem' }}>
+              <span style={{ fontSize: '0.8rem', color: '#94A3B8', fontFamily: 'var(--font-mono)', textTransform: 'uppercase', display: 'block', marginBottom: '0.75rem' }}>
                 Quick Subject Suggestions:
               </span>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', width: '100%', boxSizing: 'border-box' }}>
@@ -348,9 +349,9 @@ export default function Contact() {
                     style={{
                       padding: '0.45rem 0.85rem',
                       borderRadius: '9999px',
-                      background: formData.subject === preset ? 'rgba(0, 242, 254, 0.2)' : 'rgba(255, 255, 255, 0.04)',
-                      border: formData.subject === preset ? '1px solid #00f2fe' : '1px solid rgba(255, 255, 255, 0.08)',
-                      color: formData.subject === preset ? '#00f2fe' : '#cbd5e1',
+                      background: formData.subject === preset ? 'rgba(6, 182, 212, 0.2)' : '#0F172A',
+                      border: formData.subject === preset ? '1px solid #06B6D4' : '1px solid rgba(148, 163, 184, 0.15)',
+                      color: formData.subject === preset ? '#06B6D4' : '#94A3B8',
                       fontSize: 'clamp(0.75rem, 2.5vw, 0.8rem)',
                       cursor: 'pointer',
                       transition: 'all 0.2s ease',
@@ -373,9 +374,9 @@ export default function Contact() {
             className="glass-panel"
             style={{
               padding: 'clamp(1.25rem, 4vw, 2.5rem)',
-              border: '1px solid rgba(255, 255, 255, 0.12)',
-              background: 'linear-gradient(145deg, rgba(15, 23, 42, 0.85) 0%, rgba(10, 15, 30, 0.8) 100%)',
-              boxShadow: '0 20px 50px -15px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 242, 254, 0.1)',
+              border: '1px solid rgba(148, 163, 184, 0.15)',
+              background: '#1E293B',
+              boxShadow: '0 20px 50px -15px rgba(0, 0, 0, 0.8), 0 0 25px rgba(6, 182, 212, 0.15)',
               width: '100%',
               maxWidth: '100%',
               boxSizing: 'border-box',
@@ -400,24 +401,24 @@ export default function Contact() {
                     width: '70px',
                     height: '70px',
                     borderRadius: '50%',
-                    background: 'rgba(16, 185, 129, 0.15)',
-                    border: '2px solid #10b981',
+                    background: 'rgba(6, 182, 212, 0.15)',
+                    border: '2px solid #06B6D4',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    color: '#10b981',
-                    boxShadow: '0 0 30px rgba(16, 185, 129, 0.4)',
+                    color: '#06B6D4',
+                    boxShadow: '0 0 30px rgba(6, 182, 212, 0.35)',
                   }}
                 >
                   <CheckCircle2 size={36} />
                 </div>
 
-                <h3 style={{ fontSize: '1.75rem', color: '#fff', fontWeight: '800' }}>
+                <h3 style={{ fontSize: '1.75rem', color: '#F8FAFC', fontWeight: '800' }}>
                   Message Transmitted!
                 </h3>
 
-                <p style={{ color: '#cbd5e1', maxWidth: '440px', lineHeight: 1.6 }}>
-                  Thank you, <strong style={{ color: '#00f2fe' }}>{formData.name}</strong>. Your inquiry has been received. Muhammad Shifan will get back to you shortly at <strong style={{ color: '#fff' }}>{formData.email}</strong>.
+                <p style={{ color: '#94A3B8', maxWidth: '440px', lineHeight: 1.6 }}>
+                  Thank you, <strong style={{ color: '#06B6D4' }}>{formData.name}</strong>. Your inquiry has been received. Muhammad Shifan will get back to you shortly at <strong style={{ color: '#F8FAFC' }}>{formData.email}</strong>.
                 </p>
 
                 <button
@@ -431,10 +432,10 @@ export default function Contact() {
             ) : (
               <form onSubmit={handleSubmit} noValidate style={{ width: '100%', boxSizing: 'border-box' }}>
                 <div style={{ marginBottom: '1.75rem' }}>
-                  <h3 style={{ fontSize: 'clamp(1.25rem, 3.5vw, 1.5rem)', color: '#fff', fontWeight: '800', marginBottom: '0.35rem' }}>
+                  <h3 style={{ fontSize: 'clamp(1.25rem, 3.5vw, 1.5rem)', color: '#F8FAFC', fontWeight: '800', marginBottom: '0.35rem' }}>
                     Send Direct Message
                   </h3>
-                  <p style={{ color: '#94a3b8', fontSize: '0.9rem' }}>
+                  <p style={{ color: '#94A3B8', fontSize: '0.9rem' }}>
                     Fill in the details below to initiate direct correspondence.
                   </p>
                 </div>
@@ -456,10 +457,10 @@ export default function Contact() {
                           maxWidth: '100%',
                           boxSizing: 'border-box',
                           padding: '1.1rem 1rem 1.1rem 2.8rem',
-                          background: 'rgba(255, 255, 255, 0.04)',
-                          border: touched.name && errors.name ? '1px solid #ef4444' : '1px solid rgba(255, 255, 255, 0.12)',
+                          background: 'rgba(15, 23, 42, 0.6)',
+                          border: touched.name && errors.name ? '1px solid #ef4444' : '1px solid rgba(148, 163, 184, 0.2)',
                           borderRadius: '0.85rem',
-                          color: '#fff',
+                          color: '#F8FAFC',
                           fontSize: '0.95rem',
                           outline: 'none',
                           transition: 'all 0.2s ease',
@@ -472,7 +473,7 @@ export default function Contact() {
                           left: '2.8rem',
                           top: formData.name ? '0.35rem' : '1.1rem',
                           fontSize: formData.name ? '0.72rem' : '0.9rem',
-                          color: formData.name ? '#00f2fe' : '#94a3b8',
+                          color: formData.name ? '#06B6D4' : '#94A3B8',
                           pointerEvents: 'none',
                           transition: 'all 0.2s ease',
                           fontFamily: formData.name ? 'var(--font-mono)' : 'inherit',
@@ -480,7 +481,7 @@ export default function Contact() {
                       >
                         Your Name *
                       </label>
-                      <User size={18} color="#64748b" style={{ position: 'absolute', left: '1rem', top: '1.1rem' }} />
+                      <User size={18} color="#94A3B8" style={{ position: 'absolute', left: '1rem', top: '1.1rem' }} />
                     </div>
                     {touched.name && errors.name && (
                       <span style={{ fontSize: '0.75rem', color: '#ef4444', display: 'flex', alignItems: 'center', gap: '0.3rem', marginTop: '0.3rem' }}>
@@ -505,10 +506,10 @@ export default function Contact() {
                           maxWidth: '100%',
                           boxSizing: 'border-box',
                           padding: '1.1rem 1rem 1.1rem 2.8rem',
-                          background: 'rgba(255, 255, 255, 0.04)',
-                          border: touched.email && errors.email ? '1px solid #ef4444' : '1px solid rgba(255, 255, 255, 0.12)',
+                          background: 'rgba(15, 23, 42, 0.6)',
+                          border: touched.email && errors.email ? '1px solid #ef4444' : '1px solid rgba(148, 163, 184, 0.2)',
                           borderRadius: '0.85rem',
-                          color: '#fff',
+                          color: '#F8FAFC',
                           fontSize: '0.95rem',
                           outline: 'none',
                           transition: 'all 0.2s ease',
@@ -521,7 +522,7 @@ export default function Contact() {
                           left: '2.8rem',
                           top: formData.email ? '0.35rem' : '1.1rem',
                           fontSize: formData.email ? '0.72rem' : '0.9rem',
-                          color: formData.email ? '#00f2fe' : '#94a3b8',
+                          color: formData.email ? '#06B6D4' : '#94A3B8',
                           pointerEvents: 'none',
                           transition: 'all 0.2s ease',
                           fontFamily: formData.email ? 'var(--font-mono)' : 'inherit',
@@ -529,7 +530,7 @@ export default function Contact() {
                       >
                         Email Address *
                       </label>
-                      <AtSign size={18} color="#64748b" style={{ position: 'absolute', left: '1rem', top: '1.1rem' }} />
+                      <AtSign size={18} color="#94A3B8" style={{ position: 'absolute', left: '1rem', top: '1.1rem' }} />
                     </div>
                     {touched.email && errors.email && (
                       <span style={{ fontSize: '0.75rem', color: '#ef4444', display: 'flex', alignItems: 'center', gap: '0.3rem', marginTop: '0.3rem' }}>
@@ -554,10 +555,10 @@ export default function Contact() {
                           maxWidth: '100%',
                           boxSizing: 'border-box',
                           padding: '1.1rem 1rem 1.1rem 2.8rem',
-                          background: 'rgba(255, 255, 255, 0.04)',
-                          border: touched.subject && errors.subject ? '1px solid #ef4444' : '1px solid rgba(255, 255, 255, 0.12)',
+                          background: 'rgba(15, 23, 42, 0.6)',
+                          border: touched.subject && errors.subject ? '1px solid #ef4444' : '1px solid rgba(148, 163, 184, 0.2)',
                           borderRadius: '0.85rem',
-                          color: '#fff',
+                          color: '#F8FAFC',
                           fontSize: '0.95rem',
                           outline: 'none',
                           transition: 'all 0.2s ease',
@@ -570,7 +571,7 @@ export default function Contact() {
                           left: '2.8rem',
                           top: formData.subject ? '0.35rem' : '1.1rem',
                           fontSize: formData.subject ? '0.72rem' : '0.9rem',
-                          color: formData.subject ? '#00f2fe' : '#94a3b8',
+                          color: formData.subject ? '#06B6D4' : '#94A3B8',
                           pointerEvents: 'none',
                           transition: 'all 0.2s ease',
                           fontFamily: formData.subject ? 'var(--font-mono)' : 'inherit',
@@ -578,7 +579,7 @@ export default function Contact() {
                       >
                         Subject *
                       </label>
-                      <FileText size={18} color="#64748b" style={{ position: 'absolute', left: '1rem', top: '1.1rem' }} />
+                      <FileText size={18} color="#94A3B8" style={{ position: 'absolute', left: '1rem', top: '1.1rem' }} />
                     </div>
                     {touched.subject && errors.subject && (
                       <span style={{ fontSize: '0.75rem', color: '#ef4444', display: 'flex', alignItems: 'center', gap: '0.3rem', marginTop: '0.3rem' }}>
@@ -603,10 +604,10 @@ export default function Contact() {
                           maxWidth: '100%',
                           boxSizing: 'border-box',
                           padding: '1.1rem 1rem 1.1rem 2.8rem',
-                          background: 'rgba(255, 255, 255, 0.04)',
-                          border: touched.message && errors.message ? '1px solid #ef4444' : '1px solid rgba(255, 255, 255, 0.12)',
+                          background: 'rgba(15, 23, 42, 0.6)',
+                          border: touched.message && errors.message ? '1px solid #ef4444' : '1px solid rgba(148, 163, 184, 0.2)',
                           borderRadius: '0.85rem',
-                          color: '#fff',
+                          color: '#F8FAFC',
                           fontSize: '0.95rem',
                           outline: 'none',
                           transition: 'all 0.2s ease',
@@ -620,7 +621,7 @@ export default function Contact() {
                           left: '2.8rem',
                           top: formData.message ? '0.35rem' : '1.1rem',
                           fontSize: formData.message ? '0.72rem' : '0.9rem',
-                          color: formData.message ? '#00f2fe' : '#94a3b8',
+                          color: formData.message ? '#06B6D4' : '#94A3B8',
                           pointerEvents: 'none',
                           transition: 'all 0.2s ease',
                           fontFamily: formData.message ? 'var(--font-mono)' : 'inherit',
@@ -628,7 +629,7 @@ export default function Contact() {
                       >
                         Project Details / Message *
                       </label>
-                      <MessageSquare size={18} color="#64748b" style={{ position: 'absolute', left: '1rem', top: '1.1rem' }} />
+                      <MessageSquare size={18} color="#94A3B8" style={{ position: 'absolute', left: '1rem', top: '1.1rem' }} />
                     </div>
                     {touched.message && errors.message && (
                       <span style={{ fontSize: '0.75rem', color: '#ef4444', display: 'flex', alignItems: 'center', gap: '0.3rem', marginTop: '0.3rem' }}>
@@ -679,14 +680,14 @@ export default function Contact() {
           }
         }
         .floating-field input:focus, .floating-field textarea:focus {
-          border-color: #00f2fe !important;
-          background: rgba(0, 242, 254, 0.05) !important;
-          box-shadow: 0 0 20px rgba(0, 242, 254, 0.2) !important;
+          border-color: #06B6D4 !important;
+          background: rgba(6, 182, 212, 0.05) !important;
+          box-shadow: 0 0 20px rgba(6, 182, 212, 0.2) !important;
         }
         .floating-field input:focus + label, .floating-field textarea:focus + label {
           top: 0.35rem !important;
           font-size: 0.72rem !important;
-          color: #00f2fe !important;
+          color: #06B6D4 !important;
           font-family: var(--font-mono) !important;
         }
         .animate-spin {

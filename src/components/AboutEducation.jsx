@@ -6,10 +6,10 @@ export default function AboutEducation() {
   const [activeTab, setActiveTab] = useState('education');
 
   const stats = [
-    { label: 'Internships Completed', value: '4+', icon: <Briefcase size={22} color="#00f2fe" />, color: '#00f2fe' },
-    { label: 'Projects Engineered', value: '10+', icon: <Code size={22} color="#a855f7" />, color: '#a855f7' },
-    { label: 'Certifications Earned', value: '8+', icon: <Award size={22} color="#ec4899" />, color: '#ec4899' },
-    { label: 'Academic CGPA', value: '7.2', icon: <GraduationCap size={22} color="#10b981" />, color: '#10b981' },
+    { label: 'Internships Completed', value: '4+', icon: <Briefcase size={22} color="#06B6D4" />, color: '#06B6D4' },
+    { label: 'Projects Engineered', value: '10+', icon: <Code size={22} color="#06B6D4" />, color: '#06B6D4' },
+    { label: 'Certifications Earned', value: '8+', icon: <Award size={22} color="#06B6D4" />, color: '#06B6D4' },
+    { label: 'Academic CGPA', value: '7.2', icon: <GraduationCap size={22} color="#06B6D4" />, color: '#06B6D4' },
   ];
 
   const educations = [
@@ -74,8 +74,8 @@ export default function AboutEducation() {
                 display: 'flex',
                 alignItems: 'center',
                 gap: '1.25rem',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
-                background: 'linear-gradient(145deg, rgba(15, 23, 42, 0.8) 0%, rgba(10, 15, 29, 0.7) 100%)',
+                border: '1px solid rgba(148, 163, 184, 0.15)',
+                background: '#1E293B',
               }}
             >
               <div
@@ -83,21 +83,21 @@ export default function AboutEducation() {
                   width: '52px',
                   height: '52px',
                   borderRadius: '14px',
-                  background: `rgba(${stat.color === '#00f2fe' ? '0, 242, 254' : stat.color === '#a855f7' ? '168, 85, 247' : stat.color === '#ec4899' ? '236, 72, 153' : '16, 185, 129'}, 0.12)`,
-                  border: `1px solid ${stat.color}44`,
+                  background: 'rgba(6, 182, 212, 0.12)',
+                  border: '1px solid rgba(6, 182, 212, 0.35)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  boxShadow: `0 0 20px ${stat.color}22`,
+                  boxShadow: '0 0 15px rgba(6, 182, 212, 0.15)',
                 }}
               >
                 {stat.icon}
               </div>
               <div>
-                <div style={{ fontSize: '2rem', fontWeight: '800', fontFamily: 'var(--font-heading)', color: '#fff', lineHeight: 1.1 }}>
+                <div style={{ fontSize: '2rem', fontWeight: '800', fontFamily: 'var(--font-heading)', color: '#F8FAFC', lineHeight: 1.1 }}>
                   {stat.value}
                 </div>
-                <div style={{ fontSize: '0.85rem', color: '#94a3b8', fontWeight: '500', marginTop: '0.2rem' }}>
+                <div style={{ fontSize: '0.85rem', color: '#94A3B8', fontWeight: '500', marginTop: '0.2rem' }}>
                   {stat.label}
                 </div>
               </div>
@@ -115,30 +115,30 @@ export default function AboutEducation() {
           className="about-grid"
         >
           {/* Left Column: Personal Narrative Card */}
-          <div className="glass-panel" style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+          <div className="glass-panel" style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', background: '#1E293B', border: '1px solid rgba(148, 163, 184, 0.15)' }}>
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', marginBottom: '1.25rem' }}>
                 <div
                   style={{
                     padding: '0.4rem',
                     borderRadius: '8px',
-                    background: 'rgba(0, 242, 254, 0.1)',
-                    color: '#00f2fe',
+                    background: 'rgba(6, 182, 212, 0.12)',
+                    color: '#06B6D4',
                   }}
                 >
                   <Lightbulb size={20} />
                 </div>
-                <h3 style={{ fontSize: '1.5rem', color: '#fff' }}>Engineering Philosophy</h3>
+                <h3 style={{ fontSize: '1.5rem', color: '#F8FAFC' }}>Engineering Philosophy</h3>
               </div>
 
-              <p style={{ color: '#cbd5e1', fontSize: '1.025rem', lineHeight: 1.8, marginBottom: '1.25rem' }}>
-                Hello! I am <strong style={{ color: '#fff' }}>Muhammad Shifan S</strong>, an energetic and detail-oriented Full Stack Developer based in Tamil Nadu, India.
+              <p style={{ color: '#94A3B8', fontSize: '1.025rem', lineHeight: 1.8, marginBottom: '1.25rem' }}>
+                Hello! I am <strong style={{ color: '#F8FAFC' }}>Muhammad Shifan S</strong>, an energetic and detail-oriented Full Stack Developer based in Tamil Nadu, India.
                 My passion lies at the intersection of robust backend systems and mesmerizing, responsive user interfaces.
               </p>
 
-              <p style={{ color: '#94a3b8', fontSize: '0.975rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                Throughout my academic tenure at <strong style={{ color: '#38bdf8' }}>SRM Trichy Arts and Science College</strong> and multiple industry internships at <span style={{ color: '#cbd5e1' }}>Vinsup Infotech, Zidio, NoviTech, and SkillForge</span>, I have transformed abstract business ideas into production-ready web apps.
-                I am currently expanding my capabilities into <strong style={{ color: '#c084fc' }}>Python, Artificial Intelligence, Machine Learning, and Deep Learning,</strong> while strengthening my full-stack development and software engineering skills.
+              <p style={{ color: '#94A3B8', fontSize: '0.975rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
+                Throughout my academic tenure at <strong style={{ color: '#06B6D4' }}>SRM Trichy Arts and Science College</strong> and multiple industry internships at <span style={{ color: '#F8FAFC' }}>Vinsup Infotech, Zidio, NoviTech, and SkillForge</span>, I have transformed abstract business ideas into production-ready web apps.
+                I am currently expanding my capabilities into <strong style={{ color: '#06B6D4' }}>Python, Artificial Intelligence, Machine Learning, and Deep Learning,</strong> while strengthening my full-stack development and software engineering skills.
               </p>
 
               {/* Strengths List */}
@@ -149,15 +149,15 @@ export default function AboutEducation() {
                     style={{
                       padding: '1rem',
                       borderRadius: '0.85rem',
-                      background: 'rgba(255, 255, 255, 0.03)',
-                      border: '1px solid rgba(255, 255, 255, 0.06)',
+                      background: 'rgba(15, 23, 42, 0.6)',
+                      border: '1px solid rgba(148, 163, 184, 0.12)',
                     }}
                   >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#38bdf8', fontWeight: '700', fontSize: '0.9rem', marginBottom: '0.35rem' }}>
-                      <CheckCircle2 size={16} color="#00f2fe" />
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#06B6D4', fontWeight: '700', fontSize: '0.9rem', marginBottom: '0.35rem' }}>
+                      <CheckCircle2 size={16} color="#06B6D4" />
                       <span>{item.title}</span>
                     </div>
-                    <p style={{ fontSize: '0.8rem', color: '#94a3b8', margin: 0 }}>
+                    <p style={{ fontSize: '0.8rem', color: '#94A3B8', margin: 0 }}>
                       {item.desc}
                     </p>
                   </div>
@@ -166,9 +166,9 @@ export default function AboutEducation() {
             </div>
 
             {/* Bottom Quick Action */}
-            <div style={{ marginTop: '2rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(255, 255, 255, 0.08)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#94a3b8', fontSize: '0.85rem' }}>
-                <Compass size={16} color="#00f2fe" />
+            <div style={{ marginTop: '2rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(148, 163, 184, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#94A3B8', fontSize: '0.85rem' }}>
+                <Compass size={16} color="#06B6D4" />
                 <span>Based in Tamil Nadu, India • Open to Remote & Onsite</span>
               </div>
               <a
@@ -184,7 +184,7 @@ export default function AboutEducation() {
                   gap: '0.35rem',
                   fontSize: '0.85rem',
                   fontWeight: '600',
-                  color: '#00f2fe',
+                  color: '#06B6D4',
                 }}
               >
                 <span>Connect with me</span>
@@ -201,15 +201,15 @@ export default function AboutEducation() {
                   style={{
                     padding: '0.4rem',
                     borderRadius: '8px',
-                    background: 'rgba(168, 85, 247, 0.12)',
-                    color: '#a855f7',
+                    background: 'rgba(6, 182, 212, 0.12)',
+                    color: '#06B6D4',
                   }}
                 >
                   <GraduationCap size={22} />
                 </div>
-                <h3 style={{ fontSize: '1.5rem', color: '#fff' }}>Education History</h3>
+                <h3 style={{ fontSize: '1.5rem', color: '#F8FAFC' }}>Education History</h3>
               </div>
-              <span style={{ fontSize: '0.8rem', color: '#64748b', fontFamily: 'var(--font-mono)' }}>ACADEMICS</span>
+              <span style={{ fontSize: '0.8rem', color: '#94A3B8', fontFamily: 'var(--font-mono)' }}>ACADEMICS</span>
             </div>
 
             {educations.map((edu, idx) => (
@@ -220,10 +220,8 @@ export default function AboutEducation() {
                 style={{
                   padding: '2rem',
                   position: 'relative',
-                  border: edu.current ? '1px solid rgba(0, 242, 254, 0.35)' : '1px solid rgba(255, 255, 255, 0.08)',
-                  background: edu.current
-                    ? 'linear-gradient(145deg, rgba(0, 242, 254, 0.05) 0%, rgba(15, 23, 42, 0.8) 100%)'
-                    : 'rgba(15, 23, 42, 0.7)',
+                  border: edu.current ? '1px solid rgba(6, 182, 212, 0.4)' : '1px solid rgba(148, 163, 184, 0.15)',
+                  background: '#1E293B',
                 }}
               >
                 {/* Active Tag */}
@@ -235,9 +233,9 @@ export default function AboutEducation() {
                       fontSize: '0.75rem',
                       fontWeight: '700',
                       fontFamily: 'var(--font-mono)',
-                      background: edu.current ? 'rgba(0, 242, 254, 0.15)' : 'rgba(255, 255, 255, 0.06)',
-                      color: edu.current ? '#00f2fe' : '#94a3b8',
-                      border: edu.current ? '1px solid rgba(0, 242, 254, 0.3)' : '1px solid rgba(255, 255, 255, 0.1)',
+                      background: edu.current ? 'rgba(6, 182, 212, 0.15)' : 'rgba(15, 23, 42, 0.6)',
+                      color: edu.current ? '#06B6D4' : '#94A3B8',
+                      border: edu.current ? '1px solid rgba(6, 182, 212, 0.35)' : '1px solid rgba(148, 163, 184, 0.15)',
                     }}
                   >
                     {edu.duration}
@@ -250,11 +248,11 @@ export default function AboutEducation() {
                   )}
                 </div>
 
-                <h4 style={{ fontSize: '1.25rem', color: '#fff', marginBottom: '0.35rem' }}>
+                <h4 style={{ fontSize: '1.25rem', color: '#F8FAFC', marginBottom: '0.35rem' }}>
                   {edu.degree}
                 </h4>
 
-                <div style={{ color: '#38bdf8', fontWeight: '600', fontSize: '0.95rem', marginBottom: '0.5rem' }}>
+                <div style={{ color: '#06B6D4', fontWeight: '600', fontSize: '0.95rem', marginBottom: '0.5rem' }}>
                   {edu.institution}
                 </div>
 
@@ -263,8 +261,8 @@ export default function AboutEducation() {
                     display: 'inline-block',
                     padding: '0.25rem 0.65rem',
                     borderRadius: '6px',
-                    background: 'rgba(16, 185, 129, 0.12)',
-                    color: '#34d399',
+                    background: 'rgba(6, 182, 212, 0.12)',
+                    color: '#06B6D4',
                     fontFamily: 'var(--font-mono)',
                     fontSize: '0.85rem',
                     fontWeight: '600',
@@ -274,7 +272,7 @@ export default function AboutEducation() {
                   {edu.grade}
                 </div>
 
-                <p style={{ color: '#94a3b8', fontSize: '0.9rem', lineHeight: 1.6, margin: 0 }}>
+                <p style={{ color: '#94A3B8', fontSize: '0.9rem', lineHeight: 1.6, margin: 0 }}>
                   {edu.desc}
                 </p>
               </div>

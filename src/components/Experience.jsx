@@ -21,7 +21,7 @@ export default function Experience({ onOpenCertificate }) {
         'Collaborated with senior engineers in Agile sprints and code review pipelines.',
       ],
       tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'REST APIs', 'Git'],
-      color: '#00f2fe',
+      color: '#06B6D4',
     },
     {
       company: 'Zidio Development',
@@ -38,7 +38,7 @@ export default function Experience({ onOpenCertificate }) {
         'Enhanced cross-browser compatibility and mobile viewport responsiveness.',
       ],
       tech: ['JavaScript (ES6+)', 'React.js', 'HTML5', 'CSS3', 'REST APIs', 'Bootstrap'],
-      color: '#a855f7',
+      color: '#06B6D4',
     },
     {
       company: 'NoviTech R&D Private Limited',
@@ -55,7 +55,7 @@ export default function Experience({ onOpenCertificate }) {
         'Participated in daily standups and collaborative development sprints.',
       ],
       tech: ['JavaScript', 'HTML5', 'CSS3', 'React.js', 'Node.js Basics', 'Git Workflow'],
-      color: '#10b981',
+      color: '#06B6D4',
     },
     {
       company: 'SkillForge E-Learning Solutions',
@@ -72,7 +72,7 @@ export default function Experience({ onOpenCertificate }) {
         'Achieved top scores in frontend design accuracy and code quality assessments.',
       ],
       tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'UI/UX Principles'],
-      color: '#ec4899',
+      color: '#06B6D4',
     },
   ];
 
@@ -114,8 +114,8 @@ export default function Experience({ onOpenCertificate }) {
               bottom: '20px',
               left: '28px',
               width: '3px',
-              background: 'linear-gradient(180deg, #00f2fe 0%, #a855f7 50%, #ec4899 100%)',
-              boxShadow: '0 0 15px rgba(0, 242, 254, 0.4)',
+              background: 'linear-gradient(180deg, #06B6D4 0%, #0891b2 100%)',
+              boxShadow: '0 0 15px rgba(6, 182, 212, 0.4)',
               borderRadius: '9999px',
               zIndex: 1,
             }}
@@ -146,9 +146,9 @@ export default function Experience({ onOpenCertificate }) {
                       width: '58px',
                       height: '58px',
                       borderRadius: '50%',
-                      background: '#030712',
-                      border: `2px solid ${exp.color}`,
-                      boxShadow: `0 0 25px ${exp.color}66, inset 0 0 15px ${exp.color}33`,
+                      background: '#0F172A',
+                      border: '2px solid #06B6D4',
+                      boxShadow: '0 0 20px rgba(6, 182, 212, 0.4)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -158,7 +158,7 @@ export default function Experience({ onOpenCertificate }) {
                       transform: isExpanded ? 'scale(1.15)' : 'scale(1)',
                     }}
                   >
-                    <Briefcase size={22} color={exp.color} />
+                    <Briefcase size={22} color="#06B6D4" />
                   </div>
 
                   {/* Experience Card */}
@@ -167,11 +167,9 @@ export default function Experience({ onOpenCertificate }) {
                     style={{
                       flex: 1,
                       padding: '2rem',
-                      border: isExpanded ? `1px solid ${exp.color}66` : '1px solid rgba(255, 255, 255, 0.08)',
-                      background: isExpanded
-                        ? `linear-gradient(145deg, ${exp.color}0a 0%, rgba(15, 23, 42, 0.85) 100%)`
-                        : 'rgba(15, 23, 42, 0.7)',
-                      boxShadow: isExpanded ? `0 15px 40px -10px rgba(0,0,0,0.8), 0 0 25px ${exp.color}22` : undefined,
+                      border: isExpanded ? '1px solid rgba(6, 182, 212, 0.5)' : '1px solid rgba(148, 163, 184, 0.15)',
+                      background: '#1E293B',
+                      boxShadow: isExpanded ? '0 15px 40px -10px rgba(0,0,0,0.8), 0 0 25px rgba(6, 182, 212, 0.2)' : undefined,
                     }}
                   >
                     {/* Top Row: Role, Company & Period */}
@@ -187,7 +185,7 @@ export default function Experience({ onOpenCertificate }) {
                     >
                       <div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', flexWrap: 'wrap', marginBottom: '0.35rem' }}>
-                          <h3 style={{ fontSize: '1.35rem', color: '#fff', fontWeight: '800' }}>
+                          <h3 style={{ fontSize: '1.35rem', color: '#F8FAFC', fontWeight: '800' }}>
                             {exp.role}
                           </h3>
                           <span
@@ -197,15 +195,15 @@ export default function Experience({ onOpenCertificate }) {
                               fontSize: '0.75rem',
                               fontFamily: 'var(--font-mono)',
                               fontWeight: '700',
-                              background: `${exp.color}18`,
-                              color: exp.color,
-                              border: `1px solid ${exp.color}44`,
+                              background: 'rgba(6, 182, 212, 0.12)',
+                              color: '#06B6D4',
+                              border: '1px solid rgba(6, 182, 212, 0.35)',
                             }}
                           >
                             {exp.badge}
                           </span>
                         </div>
-                        <h4 style={{ fontSize: '1.1rem', color: '#38bdf8', fontWeight: '600' }}>
+                        <h4 style={{ fontSize: '1.1rem', color: '#06B6D4', fontWeight: '600' }}>
                           {exp.company}
                         </h4>
                       </div>
@@ -216,12 +214,12 @@ export default function Experience({ onOpenCertificate }) {
                             display: 'flex',
                             alignItems: 'center',
                             gap: '0.4rem',
-                            color: '#94a3b8',
+                            color: '#94A3B8',
                             fontSize: '0.85rem',
                             fontFamily: 'var(--font-mono)',
                           }}
                         >
-                          <Calendar size={14} color="#00f2fe" />
+                          <Calendar size={14} color="#06B6D4" />
                           <span>{exp.period}</span>
                         </div>
                         <div
@@ -240,21 +238,21 @@ export default function Experience({ onOpenCertificate }) {
                     </div>
 
                     {/* Summary paragraph */}
-                    <p style={{ color: '#cbd5e1', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
+                    <p style={{ color: '#94A3B8', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
                       {exp.summary}
                     </p>
 
                     {/* Expandable Key Highlights */}
                     {isExpanded && (
                       <div style={{ marginTop: '1rem', animation: 'fadeIn 0.3s ease-out' }}>
-                        <h5 style={{ fontSize: '0.9rem', color: '#e2e8f0', textTransform: 'uppercase', letterSpacing: '0.05em', fontFamily: 'var(--font-mono)', marginBottom: '0.75rem' }}>
+                        <h5 style={{ fontSize: '0.9rem', color: '#F8FAFC', textTransform: 'uppercase', letterSpacing: '0.05em', fontFamily: 'var(--font-mono)', marginBottom: '0.75rem' }}>
                           Key Contributions & Achievements:
                         </h5>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', marginBottom: '1.25rem' }}>
                           {exp.highlights.map((h, i) => (
                             <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.65rem' }}>
-                              <CheckCircle2 size={16} color={exp.color} style={{ marginTop: '3px', flexShrink: 0 }} />
-                              <span style={{ fontSize: '0.9rem', color: '#94a3b8', lineHeight: 1.5 }}>
+                              <CheckCircle2 size={16} color="#06B6D4" style={{ marginTop: '3px', flexShrink: 0 }} />
+                              <span style={{ fontSize: '0.9rem', color: '#94A3B8', lineHeight: 1.5 }}>
                                 {h}
                               </span>
                             </div>
@@ -273,7 +271,7 @@ export default function Experience({ onOpenCertificate }) {
                         gap: '1rem',
                         marginTop: '1.25rem',
                         paddingTop: '1rem',
-                        borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+                        borderTop: '1px solid rgba(148, 163, 184, 0.15)',
                       }}
                     >
                       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -283,9 +281,9 @@ export default function Experience({ onOpenCertificate }) {
                             style={{
                               padding: '0.25rem 0.65rem',
                               borderRadius: '6px',
-                              background: 'rgba(255, 255, 255, 0.04)',
-                              border: '1px solid rgba(255, 255, 255, 0.08)',
-                              color: '#cbd5e1',
+                              background: 'rgba(15, 23, 42, 0.6)',
+                              border: '1px solid rgba(148, 163, 184, 0.12)',
+                              color: '#94A3B8',
                               fontSize: '0.8rem',
                               fontFamily: 'var(--font-mono)',
                             }}
@@ -309,9 +307,9 @@ export default function Experience({ onOpenCertificate }) {
                             gap: '0.4rem',
                             padding: '0.45rem 0.85rem',
                             borderRadius: '8px',
-                            background: 'rgba(0, 242, 254, 0.1)',
-                            border: '1px solid rgba(0, 242, 254, 0.3)',
-                            color: '#00f2fe',
+                            background: 'rgba(6, 182, 212, 0.12)',
+                            border: '1px solid rgba(6, 182, 212, 0.35)',
+                            color: '#06B6D4',
                             fontSize: '0.8rem',
                             fontWeight: '600',
                           }}
@@ -329,9 +327,9 @@ export default function Experience({ onOpenCertificate }) {
                             gap: '0.35rem',
                             padding: '0.45rem 0.75rem',
                             borderRadius: '8px',
-                            background: 'rgba(255, 255, 255, 0.04)',
-                            border: '1px solid rgba(255, 255, 255, 0.08)',
-                            color: '#94a3b8',
+                            background: 'rgba(15, 23, 42, 0.6)',
+                            border: '1px solid rgba(148, 163, 184, 0.12)',
+                            color: '#94A3B8',
                             fontSize: '0.8rem',
                           }}
                         >

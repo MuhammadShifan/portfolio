@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Award, ExternalLink, Maximize2, Sparkles, CheckCircle, ShieldCheck } from 'lucide-react';
+import { Award, ExternalLink, Maximize2, ShieldCheck } from 'lucide-react';
 import { soundFx } from '../utils/sound';
 
 export default function Certifications({ onSelectCertificate, certificates }) {
@@ -58,10 +58,10 @@ export default function Certifications({ onSelectCertificate, certificates }) {
                   borderRadius: '9999px',
                   fontSize: '0.875rem',
                   fontWeight: isSelected ? '700' : '500',
-                  color: isSelected ? '#030712' : '#cbd5e1',
-                  background: isSelected ? 'var(--gradient-cyan)' : 'rgba(15, 23, 42, 0.8)',
-                  border: isSelected ? '1px solid #00f2fe' : '1px solid rgba(255, 255, 255, 0.08)',
-                  boxShadow: isSelected ? '0 0 20px rgba(0, 242, 254, 0.4)' : 'none',
+                  color: isSelected ? '#0F172A' : '#94A3B8',
+                  background: isSelected ? '#06B6D4' : '#1E293B',
+                  border: isSelected ? '1px solid #06B6D4' : '1px solid rgba(148, 163, 184, 0.15)',
+                  boxShadow: isSelected ? '0 0 20px rgba(6, 182, 212, 0.35)' : 'none',
                   transition: 'all 0.25s ease',
                   cursor: 'pointer',
                 }}
@@ -98,8 +98,8 @@ export default function Certifications({ onSelectCertificate, certificates }) {
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'space-between',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
-                  background: 'linear-gradient(145deg, rgba(15, 23, 42, 0.8) 0%, rgba(10, 15, 30, 0.7) 100%)',
+                  border: '1px solid rgba(148, 163, 184, 0.15)',
+                  background: '#1E293B',
                   position: 'relative',
                   overflow: 'hidden',
                   transition: 'all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
@@ -113,9 +113,9 @@ export default function Certifications({ onSelectCertificate, certificates }) {
                     height: '190px',
                     borderRadius: '0.85rem',
                     overflow: 'hidden',
-                    background: '#070c18',
+                    background: '#0F172A',
                     marginBottom: '1rem',
-                    border: '1px solid rgba(255, 255, 255, 0.06)',
+                    border: '1px solid rgba(148, 163, 184, 0.12)',
                   }}
                   className="cert-img-container"
                 >
@@ -136,7 +136,7 @@ export default function Certifications({ onSelectCertificate, certificates }) {
                     style={{
                       position: 'absolute',
                       inset: 0,
-                      background: 'rgba(3, 7, 18, 0.75)',
+                      background: 'rgba(15, 23, 42, 0.85)',
                       backdropFilter: 'blur(4px)',
                       opacity: 0,
                       display: 'flex',
@@ -145,7 +145,7 @@ export default function Certifications({ onSelectCertificate, certificates }) {
                       justifyContent: 'center',
                       gap: '0.5rem',
                       transition: 'opacity 0.25s ease',
-                      color: '#00f2fe',
+                      color: '#06B6D4',
                     }}
                     className="cert-overlay"
                   >
@@ -154,12 +154,12 @@ export default function Certifications({ onSelectCertificate, certificates }) {
                         width: '44px',
                         height: '44px',
                         borderRadius: '50%',
-                        background: 'rgba(0, 242, 254, 0.2)',
-                        border: '1px solid #00f2fe',
+                        background: 'rgba(6, 182, 212, 0.2)',
+                        border: '1px solid #06B6D4',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        boxShadow: '0 0 20px rgba(0, 242, 254, 0.4)',
+                        boxShadow: '0 0 20px rgba(6, 182, 212, 0.4)',
                       }}
                     >
                       <Maximize2 size={20} />
@@ -177,9 +177,9 @@ export default function Certifications({ onSelectCertificate, certificates }) {
                       left: '10px',
                       padding: '0.25rem 0.65rem',
                       borderRadius: '9999px',
-                      background: 'rgba(7, 12, 27, 0.85)',
-                      border: '1px solid rgba(0, 242, 254, 0.4)',
-                      color: '#00f2fe',
+                      background: 'rgba(15, 23, 42, 0.9)',
+                      border: '1px solid rgba(6, 182, 212, 0.4)',
+                      color: '#06B6D4',
                       fontSize: '0.7rem',
                       fontWeight: '700',
                       fontFamily: 'var(--font-mono)',
@@ -196,7 +196,7 @@ export default function Certifications({ onSelectCertificate, certificates }) {
                     style={{
                       fontSize: '1.05rem',
                       fontWeight: '700',
-                      color: '#fff',
+                      color: '#F8FAFC',
                       lineHeight: 1.35,
                       marginBottom: '0.4rem',
                     }}
@@ -204,8 +204,8 @@ export default function Certifications({ onSelectCertificate, certificates }) {
                     {cert.title}
                   </h4>
 
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '0.75rem', paddingTop: '0.75rem', borderTop: '1px solid rgba(255, 255, 255, 0.06)' }}>
-                    <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '0.75rem', paddingTop: '0.75rem', borderTop: '1px solid rgba(148, 163, 184, 0.12)' }}>
+                    <span style={{ fontSize: '0.8rem', color: '#94A3B8' }}>
                       {cert.date}
                     </span>
                     <span
@@ -215,7 +215,7 @@ export default function Certifications({ onSelectCertificate, certificates }) {
                         gap: '0.3rem',
                         fontSize: '0.8rem',
                         fontWeight: '600',
-                        color: '#34d399',
+                        color: '#06B6D4',
                       }}
                     >
                       <ShieldCheck size={14} />

@@ -29,15 +29,15 @@ export default function ThreeBackground() {
       return;
     }
 
-    // 1. Starfield Particles with Dual Colors (Cyan & Neon Purple)
+    // 1. Starfield Particles with Techy Dark Colors (Neon Cyan & Slate / White)
     const particleCount = 1200;
     const geometry = new THREE.BufferGeometry();
     const positions = new Float32Array(particleCount * 3);
     const colors = new Float32Array(particleCount * 3);
 
-    const cyanColor = new THREE.Color(0x00f2fe);
-    const purpleColor = new THREE.Color(0xa855f7);
-    const whiteColor = new THREE.Color(0xffffff);
+    const cyanColor = new THREE.Color(0x06b6d4);
+    const slateColor = new THREE.Color(0x94a3b8);
+    const whiteColor = new THREE.Color(0xf8fafc);
 
     for (let i = 0; i < particleCount; i++) {
       positions[i * 3] = (Math.random() - 0.5) * 250;
@@ -46,10 +46,10 @@ export default function ThreeBackground() {
 
       const mixRatio = Math.random();
       let chosenColor;
-      if (mixRatio < 0.45) {
+      if (mixRatio < 0.6) {
         chosenColor = cyanColor;
       } else if (mixRatio < 0.85) {
-        chosenColor = purpleColor;
+        chosenColor = slateColor;
       } else {
         chosenColor = whiteColor;
       }
@@ -79,7 +79,7 @@ export default function ThreeBackground() {
 
     const icosaGeom = new THREE.IcosahedronGeometry(12, 1);
     const icosaMat = new THREE.MeshBasicMaterial({
-      color: 0x00f2fe,
+      color: 0x06b6d4,
       wireframe: true,
       transparent: true,
       opacity: 0.12
@@ -90,7 +90,7 @@ export default function ThreeBackground() {
 
     const torusGeom = new THREE.TorusGeometry(16, 1.2, 16, 50);
     const torusMat = new THREE.MeshBasicMaterial({
-      color: 0xa855f7,
+      color: 0x0891b2,
       wireframe: true,
       transparent: true,
       opacity: 0.1
@@ -102,7 +102,7 @@ export default function ThreeBackground() {
 
     const octaGeom = new THREE.OctahedronGeometry(8, 0);
     const octaMat = new THREE.MeshBasicMaterial({
-      color: 0xec4899,
+      color: 0x06b6d4,
       wireframe: true,
       transparent: true,
       opacity: 0.15

@@ -79,13 +79,13 @@ export default function Navbar() {
             alignItems: 'center',
             justifyContent: 'space-between',
             padding: '0.65rem 1.25rem',
-            background: scrolled ? 'rgba(7, 12, 27, 0.85)' : 'rgba(13, 20, 36, 0.6)',
+            background: scrolled ? 'rgba(15, 23, 42, 0.9)' : 'rgba(30, 41, 59, 0.75)',
             backdropFilter: 'blur(20px)',
             WebkitBackdropFilter: 'blur(20px)',
-            border: scrolled ? '1px solid rgba(0, 242, 254, 0.2)' : '1px solid rgba(255, 255, 255, 0.08)',
+            border: scrolled ? '1px solid rgba(6, 182, 212, 0.25)' : '1px solid rgba(148, 163, 184, 0.15)',
             borderRadius: '9999px',
             boxShadow: scrolled
-              ? '0 10px 30px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 242, 254, 0.15)'
+              ? '0 10px 30px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(6, 182, 212, 0.15)'
               : '0 4px 20px rgba(0, 0, 0, 0.3)',
             transition: 'all 0.3s ease',
           }}
@@ -110,16 +110,16 @@ export default function Navbar() {
                 width: '38px',
                 height: '38px',
                 borderRadius: '12px',
-                background: 'linear-gradient(135deg, rgba(0, 242, 254, 0.2) 0%, rgba(168, 85, 247, 0.2) 100%)',
-                border: '1px solid rgba(0, 242, 254, 0.5)',
+                background: 'rgba(6, 182, 212, 0.12)',
+                border: '1px solid rgba(6, 182, 212, 0.4)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: '#00f2fe',
+                color: '#06B6D4',
                 fontWeight: '800',
                 fontFamily: 'var(--font-mono)',
                 fontSize: '1rem',
-                boxShadow: '0 0 15px rgba(0, 242, 254, 0.3)',
+                boxShadow: '0 0 15px rgba(6, 182, 212, 0.2)',
               }}
             >
               MDS
@@ -130,25 +130,15 @@ export default function Navbar() {
                   fontWeight: '800',
                   fontSize: '0.95rem',
                   letterSpacing: '-0.02em',
-                  color: '#fff',
+                  color: '#F8FAFC',
                   display: 'flex',
                   alignItems: 'center',
                   gap: '0.35rem',
                 }}
               >
                 Muhammad Shifan
-                <span style={{ color: '#00f2fe' }}>.</span>
+                <span style={{ color: '#06B6D4' }}>.</span>
               </span>
-              {/* <span
-                style={{
-                  fontSize: '0.7rem',
-                  color: '#94a3b8',
-                  fontFamily: 'var(--font-mono)',
-                  letterSpacing: '0.05em',
-                }}
-              >
-                MERN DEVELOPER
-              </span> */}
             </div>
           </a>
 
@@ -181,10 +171,10 @@ export default function Navbar() {
                       borderRadius: '9999px',
                       fontSize: '0.85rem',
                       fontWeight: isActive ? '600' : '500',
-                      color: isActive ? '#00f2fe' : '#94a3b8',
-                      background: isActive ? 'rgba(0, 242, 254, 0.1)' : 'transparent',
-                      border: isActive ? '1px solid rgba(0, 242, 254, 0.3)' : '1px solid transparent',
-                      boxShadow: isActive ? '0 0 15px rgba(0, 242, 254, 0.2)' : 'none',
+                      color: isActive ? '#06B6D4' : '#94A3B8',
+                      background: isActive ? 'rgba(6, 182, 212, 0.12)' : 'transparent',
+                      border: isActive ? '1px solid rgba(6, 182, 212, 0.35)' : '1px solid transparent',
+                      boxShadow: isActive ? '0 0 15px rgba(6, 182, 212, 0.2)' : 'none',
                       transition: 'all 0.2s ease',
                     }}
                   >
@@ -207,12 +197,12 @@ export default function Navbar() {
                 width: '36px',
                 height: '36px',
                 borderRadius: '50%',
-                background: soundEnabled ? 'rgba(0, 242, 254, 0.15)' : 'rgba(255, 255, 255, 0.05)',
-                border: soundEnabled ? '1px solid rgba(0, 242, 254, 0.4)' : '1px solid rgba(255, 255, 255, 0.1)',
+                background: soundEnabled ? 'rgba(6, 182, 212, 0.15)' : 'rgba(255, 255, 255, 0.05)',
+                border: soundEnabled ? '1px solid rgba(6, 182, 212, 0.4)' : '1px solid rgba(148, 163, 184, 0.15)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: soundEnabled ? '#00f2fe' : '#64748b',
+                color: soundEnabled ? '#06B6D4' : '#94A3B8',
                 transition: 'all 0.2s ease',
               }}
             >
@@ -236,9 +226,9 @@ export default function Navbar() {
                 borderRadius: '9999px',
                 fontSize: '0.85rem',
                 fontWeight: '600',
-                color: '#030712',
-                background: 'var(--gradient-cyan)',
-                boxShadow: '0 0 15px rgba(0, 242, 254, 0.3)',
+                color: '#0F172A',
+                background: '#06B6D4',
+                boxShadow: '0 0 15px rgba(6, 182, 212, 0.3)',
                 transition: 'all 0.2s ease',
               }}
             >
@@ -263,7 +253,7 @@ export default function Navbar() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: '#fff',
+                color: '#F8FAFC',
               }}
             >
               {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -277,12 +267,12 @@ export default function Navbar() {
             style={{
               marginTop: '0.75rem',
               padding: '1.25rem',
-              background: 'rgba(7, 12, 27, 0.95)',
+              background: 'rgba(15, 23, 42, 0.96)',
               backdropFilter: 'blur(20px)',
               WebkitBackdropFilter: 'blur(20px)',
-              border: '1px solid rgba(0, 242, 254, 0.25)',
+              border: '1px solid rgba(6, 182, 212, 0.25)',
               borderRadius: '1.25rem',
-              boxShadow: '0 20px 40px rgba(0,0,0,0.8), 0 0 30px rgba(0, 242, 254, 0.15)',
+              boxShadow: '0 20px 40px rgba(0,0,0,0.8), 0 0 30px rgba(6, 182, 212, 0.15)',
               animation: 'fadeIn 0.2s ease-out',
             }}
           >
@@ -303,9 +293,9 @@ export default function Navbar() {
                         borderRadius: '0.75rem',
                         fontSize: '0.95rem',
                         fontWeight: isActive ? '600' : '500',
-                        color: isActive ? '#00f2fe' : '#cbd5e1',
-                        background: isActive ? 'rgba(0, 242, 254, 0.12)' : 'transparent',
-                        border: isActive ? '1px solid rgba(0, 242, 254, 0.3)' : 'none',
+                        color: isActive ? '#06B6D4' : '#94A3B8',
+                        background: isActive ? 'rgba(6, 182, 212, 0.12)' : 'transparent',
+                        border: isActive ? '1px solid rgba(6, 182, 212, 0.3)' : 'none',
                       }}
                     >
                       {link.name}
@@ -327,13 +317,13 @@ export default function Navbar() {
                     borderRadius: '0.75rem',
                     fontSize: '0.95rem',
                     fontWeight: '500',
-                    color: soundEnabled ? '#00f2fe' : '#94a3b8',
-                    background: soundEnabled ? 'rgba(0, 242, 254, 0.08)' : 'rgba(255, 255, 255, 0.03)',
-                    border: soundEnabled ? '1px solid rgba(0, 242, 254, 0.3)' : '1px solid rgba(255, 255, 255, 0.06)',
+                    color: soundEnabled ? '#06B6D4' : '#94A3B8',
+                    background: soundEnabled ? 'rgba(6, 182, 212, 0.08)' : 'rgba(255, 255, 255, 0.03)',
+                    border: soundEnabled ? '1px solid rgba(6, 182, 212, 0.3)' : '1px solid rgba(148, 163, 184, 0.1)',
                   }}
                 >
                   <span style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-                    {soundEnabled ? <Volume2 size={18} color="#00f2fe" /> : <VolumeX size={18} color="#94a3b8" />}
+                    {soundEnabled ? <Volume2 size={18} color="#06B6D4" /> : <VolumeX size={18} color="#94A3B8" />}
                     <span>Sound Effects</span>
                   </span>
                   <span
@@ -342,8 +332,8 @@ export default function Navbar() {
                       fontFamily: 'var(--font-mono)',
                       padding: '0.2rem 0.6rem',
                       borderRadius: '9999px',
-                      background: soundEnabled ? 'rgba(0, 242, 254, 0.2)' : 'rgba(255, 255, 255, 0.08)',
-                      color: soundEnabled ? '#00f2fe' : '#64748b',
+                      background: soundEnabled ? 'rgba(6, 182, 212, 0.2)' : 'rgba(255, 255, 255, 0.08)',
+                      color: soundEnabled ? '#06B6D4' : '#94A3B8',
                       fontWeight: '700',
                     }}
                   >
@@ -351,7 +341,7 @@ export default function Navbar() {
                   </span>
                 </button>
               </li>
-              <li style={{ marginTop: '0.5rem', paddingTop: '0.75rem', borderTop: '1px solid rgba(255, 255, 255, 0.1)' }}>
+              <li style={{ marginTop: '0.5rem', paddingTop: '0.75rem', borderTop: '1px solid rgba(148, 163, 184, 0.15)' }}>
                 <a
                   href="#contact"
                   onClick={(e) => {

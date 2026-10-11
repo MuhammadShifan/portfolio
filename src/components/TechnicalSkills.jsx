@@ -14,7 +14,7 @@ export default function TechnicalSkills() {
   const skills = [
     // Frontend
     { name: 'JavaScript (ES6+)', category: 'frontend', icon: 'JS', color: '#f7df1e', bg: 'rgba(247, 223, 30, 0.1)' },
-    { name: 'React.js', category: 'frontend', icon: '⚛️', color: '#00f2fe', bg: 'rgba(0, 242, 254, 0.1)' },
+    { name: 'React.js', category: 'frontend', icon: '⚛️', color: '#06B6D4', bg: 'rgba(6, 182, 212, 0.1)' },
     { name: 'HTML5 & Semantic Web', category: 'frontend', icon: '🌐', color: '#e34f26', bg: 'rgba(227, 79, 38, 0.1)' },
     { name: 'CSS3 & Modern CSS', category: 'frontend', icon: '🎨', color: '#264de4', bg: 'rgba(38, 77, 228, 0.1)' },
     { name: 'Tailwind CSS', category: 'frontend', icon: '🌊', color: '#38bdf8', bg: 'rgba(56, 189, 248, 0.1)' },
@@ -73,9 +73,9 @@ export default function TechnicalSkills() {
             overflow: 'hidden',
             marginBottom: '3.5rem',
             padding: '1.25rem 0',
-            background: 'rgba(15, 23, 42, 0.5)',
-            borderTop: '1px solid rgba(0, 242, 254, 0.15)',
-            borderBottom: '1px solid rgba(168, 85, 247, 0.15)',
+            background: 'rgba(15, 23, 42, 0.7)',
+            borderTop: '1px solid rgba(6, 182, 212, 0.2)',
+            borderBottom: '1px solid rgba(148, 163, 184, 0.15)',
             backdropFilter: 'blur(10px)',
           }}
         >
@@ -87,7 +87,7 @@ export default function TechnicalSkills() {
               left: 0,
               bottom: 0,
               width: '80px',
-              background: 'linear-gradient(to right, #030712 0%, transparent 100%)',
+              background: 'linear-gradient(to right, #0F172A 0%, transparent 100%)',
               zIndex: 2,
               pointerEvents: 'none',
             }}
@@ -99,7 +99,7 @@ export default function TechnicalSkills() {
               right: 0,
               bottom: 0,
               width: '80px',
-              background: 'linear-gradient(to left, #030712 0%, transparent 100%)',
+              background: 'linear-gradient(to left, #0F172A 0%, transparent 100%)',
               zIndex: 2,
               pointerEvents: 'none',
             }}
@@ -123,16 +123,16 @@ export default function TechnicalSkills() {
                   gap: '0.65rem',
                   padding: '0.45rem 1.25rem',
                   borderRadius: '9999px',
-                  background: 'rgba(255, 255, 255, 0.04)',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
-                  color: '#e2e8f0',
+                  background: '#1E293B',
+                  border: '1px solid rgba(148, 163, 184, 0.12)',
+                  color: '#F8FAFC',
                   fontFamily: 'var(--font-mono)',
                   fontSize: '0.85rem',
                   fontWeight: '600',
                   whiteSpace: 'nowrap',
                 }}
               >
-                <span style={{ color: '#00f2fe' }}>✦</span>
+                <span style={{ color: '#06B6D4' }}>✦</span>
                 <span>{item}</span>
               </div>
             ))}
@@ -165,10 +165,10 @@ export default function TechnicalSkills() {
                   borderRadius: '9999px',
                   fontSize: '0.875rem',
                   fontWeight: isSelected ? '700' : '500',
-                  color: isSelected ? '#030712' : '#cbd5e1',
-                  background: isSelected ? 'var(--gradient-cyan)' : 'rgba(15, 23, 42, 0.8)',
-                  border: isSelected ? '1px solid #00f2fe' : '1px solid rgba(255, 255, 255, 0.08)',
-                  boxShadow: isSelected ? '0 0 20px rgba(0, 242, 254, 0.4)' : 'none',
+                  color: isSelected ? '#0F172A' : '#94A3B8',
+                  background: isSelected ? '#06B6D4' : '#1E293B',
+                  border: isSelected ? '1px solid #06B6D4' : '1px solid rgba(148, 163, 184, 0.15)',
+                  boxShadow: isSelected ? '0 0 20px rgba(6, 182, 212, 0.35)' : 'none',
                   transition: 'all 0.25s ease',
                   cursor: 'pointer',
                 }}
@@ -194,8 +194,8 @@ export default function TechnicalSkills() {
               onMouseEnter={() => soundFx.playHover()}
               style={{
                 padding: '1.5rem',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
-                background: 'linear-gradient(145deg, rgba(15, 23, 42, 0.75) 0%, rgba(10, 15, 30, 0.6) 100%)',
+                border: '1px solid rgba(148, 163, 184, 0.15)',
+                background: '#1E293B',
                 transition: 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease',
               }}
             >
@@ -221,13 +221,13 @@ export default function TechnicalSkills() {
                     {skill.icon}
                   </div>
                   <div>
-                    <h4 style={{ fontSize: '1rem', color: '#fff', fontWeight: '700' }}>
+                    <h4 style={{ fontSize: '1rem', color: '#F8FAFC', fontWeight: '700' }}>
                       {skill.name}
                     </h4>
                     <span
                       style={{
                         fontSize: '0.75rem',
-                        color: '#94a3b8',
+                        color: '#94A3B8',
                         fontFamily: 'var(--font-mono)',
                         textTransform: 'uppercase',
                       }}
@@ -241,7 +241,7 @@ export default function TechnicalSkills() {
                     fontFamily: 'var(--font-mono)',
                     fontSize: '0.85rem',
                     fontWeight: '700',
-                    color: '#00f2fe',
+                    color: '#06B6D4',
                   }}
                 >
                   {skill.level}
@@ -254,7 +254,7 @@ export default function TechnicalSkills() {
                   width: '100%',
                   height: '6px',
                   borderRadius: '9999px',
-                  background: 'rgba(255, 255, 255, 0.06)',
+                  background: 'rgba(148, 163, 184, 0.15)',
                   overflow: 'hidden',
                   position: 'relative',
                 }}
@@ -264,8 +264,8 @@ export default function TechnicalSkills() {
                     width: skill.level,
                     height: '100%',
                     borderRadius: '9999px',
-                    background: `linear-gradient(90deg, ${skill.color}, #00f2fe)`,
-                    boxShadow: `0 0 10px ${skill.color}`,
+                    background: 'linear-gradient(90deg, #0891b2, #06B6D4)',
+                    boxShadow: '0 0 10px rgba(6, 182, 212, 0.4)',
                     transition: 'width 1s ease-in-out',
                   }}
                 />

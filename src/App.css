@@ -2,17 +2,17 @@
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
-  color: var(--accent);
-  background: var(--accent-bg);
+  color: var(--primary-accent);
+  background: rgba(6, 182, 212, 0.1);
   border: 2px solid transparent;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, background-color 0.3s;
   margin-bottom: 24px;
 
   &:hover {
-    border-color: var(--accent-border);
+    border-color: var(--primary-accent);
   }
   &:focus-visible {
-    outline: 2px solid var(--accent);
+    outline: 2px solid var(--primary-accent);
     outline-offset: 2px;
   }
 }
@@ -72,7 +72,7 @@
 
 #next-steps {
   display: flex;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--border-subtle);
   text-align: left;
 
   & > div {
@@ -87,6 +87,7 @@
     margin-bottom: 16px;
     width: 22px;
     height: 22px;
+    color: var(--primary-accent);
   }
 
   @media (max-width: 1024px) {
@@ -96,11 +97,11 @@
 }
 
 #docs {
-  border-right: 1px solid var(--border);
+  border-right: 1px solid var(--border-subtle);
 
   @media (max-width: 1024px) {
     border-right: none;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--border-subtle);
   }
 }
 
@@ -116,19 +117,22 @@
   }
 
   a {
-    color: var(--text-h);
+    color: var(--text-primary);
     font-size: 16px;
     border-radius: 6px;
-    background: var(--social-bg);
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
     display: flex;
     padding: 6px 12px;
     align-items: center;
     gap: 8px;
     text-decoration: none;
-    transition: box-shadow 0.3s;
+    transition: all 0.3s ease;
 
     &:hover {
-      box-shadow: var(--shadow);
+      color: var(--primary-accent);
+      border-color: var(--primary-accent);
+      box-shadow: var(--accent-glow);
     }
     .button-icon {
       height: 18px;
@@ -155,7 +159,7 @@
 
 #spacer {
   height: 88px;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--border-subtle);
   @media (max-width: 1024px) {
     height: 48px;
   }
@@ -175,10 +179,10 @@
 
   &::before {
     left: 0;
-    border-left-color: var(--border);
+    border-left-color: var(--border-subtle);
   }
   &::after {
     right: 0;
-    border-right-color: var(--border);
+    border-right-color: var(--border-subtle);
   }
 }

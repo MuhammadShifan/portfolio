@@ -67,10 +67,10 @@ function ProjectCard({ project, onSelect }) {
             : 'rotateX(0deg) rotateY(0deg) translateY(0px) scale3d(1, 1, 1)',
           transition: isHovered ? 'transform 0.1s ease-out, border-color 0.3s ease' : 'transform 0.5s ease-out, border-color 0.3s ease',
           transformStyle: 'preserve-3d',
-          border: isHovered ? `1px solid ${project.accentColor}` : '1px solid rgba(255, 255, 255, 0.08)',
-          background: `radial-gradient(circle at ${tilt.glowX}% ${tilt.glowY}%, ${project.accentColor}18 0%, rgba(15, 23, 42, 0.8) 60%)`,
+          border: isHovered ? '1px solid #06B6D4' : '1px solid rgba(148, 163, 184, 0.15)',
+          background: '#1E293B',
           boxShadow: isHovered
-            ? `0 20px 40px -15px rgba(0,0,0,0.8), 0 0 30px ${project.accentColor}33`
+            ? '0 20px 40px -15px rgba(0,0,0,0.8), 0 0 25px rgba(6, 182, 212, 0.25)'
             : '0 10px 30px -10px rgba(0,0,0,0.5)',
         }}
       >
@@ -82,13 +82,13 @@ function ProjectCard({ project, onSelect }) {
                 width: '50px',
                 height: '50px',
                 borderRadius: '14px',
-                background: `${project.accentColor}18`,
-                border: `1px solid ${project.accentColor}44`,
+                background: 'rgba(6, 182, 212, 0.12)',
+                border: '1px solid rgba(6, 182, 212, 0.35)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: project.accentColor,
-                boxShadow: `0 0 20px ${project.accentColor}22`,
+                color: '#06B6D4',
+                boxShadow: '0 0 15px rgba(6, 182, 212, 0.2)',
               }}
             >
               {project.icon}
@@ -101,9 +101,9 @@ function ProjectCard({ project, onSelect }) {
                 fontSize: '0.75rem',
                 fontWeight: '700',
                 fontFamily: 'var(--font-mono)',
-                background: 'rgba(255, 255, 255, 0.04)',
-                border: '1px solid rgba(255, 255, 255, 0.1)',
-                color: '#cbd5e1',
+                background: 'rgba(15, 23, 42, 0.6)',
+                border: '1px solid rgba(148, 163, 184, 0.15)',
+                color: '#94A3B8',
               }}
             >
               {project.category}
@@ -114,7 +114,7 @@ function ProjectCard({ project, onSelect }) {
           <h3
             style={{
               fontSize: '1.45rem',
-              color: '#fff',
+              color: '#F8FAFC',
               fontWeight: '800',
               marginBottom: '0.75rem',
               lineHeight: 1.25,
@@ -126,7 +126,7 @@ function ProjectCard({ project, onSelect }) {
           {/* Project Description */}
           <p
             style={{
-              color: '#94a3b8',
+              color: '#94A3B8',
               fontSize: '0.95rem',
               lineHeight: 1.6,
               marginBottom: '1.5rem',
@@ -139,8 +139,8 @@ function ProjectCard({ project, onSelect }) {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.45rem', marginBottom: '1.5rem' }}>
             {project.features.slice(0, 2).map((feat, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <CheckCircle2 size={14} color={project.accentColor} style={{ flexShrink: 0 }} />
-                <span style={{ fontSize: '0.85rem', color: '#cbd5e1' }}>{feat}</span>
+                <CheckCircle2 size={14} color="#06B6D4" style={{ flexShrink: 0 }} />
+                <span style={{ fontSize: '0.85rem', color: '#94A3B8' }}>{feat}</span>
               </div>
             ))}
           </div>
@@ -156,9 +156,9 @@ function ProjectCard({ project, onSelect }) {
                 style={{
                   padding: '0.2rem 0.6rem',
                   borderRadius: '6px',
-                  background: 'rgba(255, 255, 255, 0.04)',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
-                  color: '#94a3b8',
+                  background: 'rgba(15, 23, 42, 0.6)',
+                  border: '1px solid rgba(148, 163, 184, 0.12)',
+                  color: '#94A3B8',
                   fontSize: '0.75rem',
                   fontFamily: 'var(--font-mono)',
                 }}
@@ -175,7 +175,7 @@ function ProjectCard({ project, onSelect }) {
               alignItems: 'center',
               justifyContent: 'space-between',
               paddingTop: '1rem',
-              borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+              borderTop: '1px solid rgba(148, 163, 184, 0.15)',
             }}
           >
             <button
@@ -189,7 +189,7 @@ function ProjectCard({ project, onSelect }) {
                 gap: '0.35rem',
                 fontSize: '0.85rem',
                 fontWeight: '700',
-                color: project.accentColor,
+                color: '#06B6D4',
                 background: 'transparent',
                 cursor: 'pointer',
               }}
@@ -210,12 +210,12 @@ function ProjectCard({ project, onSelect }) {
                     width: '34px',
                     height: '34px',
                     borderRadius: '8px',
-                    background: 'rgba(255, 255, 255, 0.05)',
-                    border: '1px solid rgba(255, 255, 255, 0.1)',
+                    background: 'rgba(15, 23, 42, 0.6)',
+                    border: '1px solid rgba(148, 163, 184, 0.15)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    color: '#cbd5e1',
+                    color: '#94A3B8',
                     transition: 'all 0.2s ease',
                   }}
                 >
@@ -233,12 +233,12 @@ function ProjectCard({ project, onSelect }) {
                     width: '34px',
                     height: '34px',
                     borderRadius: '8px',
-                    background: `${project.accentColor}22`,
-                    border: `1px solid ${project.accentColor}55`,
+                    background: 'rgba(6, 182, 212, 0.12)',
+                    border: '1px solid rgba(6, 182, 212, 0.35)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    color: project.accentColor,
+                    color: '#06B6D4',
                     transition: 'all 0.2s ease',
                   }}
                 >
@@ -264,7 +264,7 @@ export default function Projects() {
       category: 'MERN Stack',
       filterCategory: 'mern',
       icon: <BookOpen size={24} />,
-      accentColor: '#00f2fe',
+      accentColor: '#06B6D4',
       description: 'Comprehensive e-learning portal built on the MERN stack with JWT authentication, role-based dashboards, and Netlify/Render CI/CD pipelines.',
       longDescription: 'An enterprise-grade LMS web platform engineered to empower instructors and students. Features seamless video course publishing, quiz modules, progress tracking, JWT token refresh authentication, and fully automated deployment via Netlify frontend & Render backend pipelines.',
       features: [
@@ -287,7 +287,7 @@ export default function Projects() {
       category: 'Full Stack Business App',
       filterCategory: 'fullstack',
       icon: <BarChart3 size={24} />,
-      accentColor: '#10b981',
+      accentColor: '#06B6D4',
       description: 'Real-time inventory management, barcode/SKU tracking, automated billing, and instant PDF invoice generation for AS Marketing.',
       longDescription: 'A custom enterprise resource planning tool designed for AS Marketing. Solved inventory discrepancy challenges through live stock tracking, batch inventory management, low-stock notifications, dynamic price calculation, and automated invoice PDF generation with custom print branding.',
       features: [
@@ -310,7 +310,7 @@ export default function Projects() {
       category: 'E-Commerce MERN',
       filterCategory: 'mern',
       icon: <ShoppingCart size={24} />,
-      accentColor: '#ec4899',
+      accentColor: '#06B6D4',
       description: 'Specialty coffee e-commerce store with aroma/roast filtering, interactive shopping cart, customer reviews, and Razorpay payment integration.',
       longDescription: 'A vibrant, modern direct-to-consumer e-commerce marketplace crafted for Nathan Coffee Mart. Customers can explore gourmet coffee beans by roast level, origin, and grind type, manage a dynamic shopping cart, save favorites, and securely checkout via Razorpay.',
       features: [
@@ -452,10 +452,10 @@ export default function Projects() {
                   borderRadius: '9999px',
                   fontSize: '0.875rem',
                   fontWeight: isSelected ? '700' : '500',
-                  color: isSelected ? '#030712' : '#cbd5e1',
-                  background: isSelected ? 'var(--gradient-cyan)' : 'rgba(15, 23, 42, 0.8)',
-                  border: isSelected ? '1px solid #00f2fe' : '1px solid rgba(255, 255, 255, 0.08)',
-                  boxShadow: isSelected ? '0 0 20px rgba(0, 242, 254, 0.4)' : 'none',
+                  color: isSelected ? '#0F172A' : '#94A3B8',
+                  background: isSelected ? '#06B6D4' : '#1E293B',
+                  border: isSelected ? '1px solid #06B6D4' : '1px solid rgba(148, 163, 184, 0.15)',
+                  boxShadow: isSelected ? '0 0 20px rgba(6, 182, 212, 0.35)' : 'none',
                   transition: 'all 0.25s ease',
                   cursor: 'pointer',
                 }}

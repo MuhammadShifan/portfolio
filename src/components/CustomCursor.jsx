@@ -64,11 +64,11 @@ export default function CustomCursor() {
           width: isHovered ? '28px' : '8px',
           height: isHovered ? '28px' : '8px',
           borderRadius: '50%',
-          backgroundColor: isHovered ? 'rgba(0, 242, 254, 0.15)' : '#00f2fe',
-          border: isHovered ? '1px solid rgba(0, 242, 254, 0.8)' : 'none',
+          backgroundColor: isHovered ? 'rgba(6, 182, 212, 0.15)' : '#06B6D4',
+          border: isHovered ? '1px solid rgba(6, 182, 212, 0.8)' : 'none',
           boxShadow: isHovered
-            ? '0 0 15px rgba(0, 242, 254, 0.4)'
-            : '0 0 10px #00f2fe, 0 0 20px rgba(0, 242, 254, 0.5)',
+            ? '0 0 15px rgba(6, 182, 212, 0.4)'
+            : '0 0 10px #06B6D4, 0 0 20px rgba(6, 182, 212, 0.5)',
           transform: `translate3d(${pos.x - (isHovered ? 14 : 4)}px, ${pos.y - (isHovered ? 14 : 4)}px, 0)`,
           pointerEvents: 'none',
           zIndex: 9999,

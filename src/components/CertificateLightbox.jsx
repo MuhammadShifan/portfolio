@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { X, ChevronLeft, ChevronRight, Download, ZoomIn, ZoomOut, Maximize2, Award } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Download, ZoomIn, ZoomOut, Award } from 'lucide-react';
 import { soundFx } from '../utils/sound';
 
 export default function CertificateLightbox({ certificates, activeIndex, onClose, onNavigate }) {
@@ -60,7 +60,7 @@ export default function CertificateLightbox({ certificates, activeIndex, onClose
         position: 'fixed',
         inset: 0,
         zIndex: 99999,
-        background: 'rgba(2, 6, 23, 0.95)',
+        background: 'rgba(15, 23, 42, 0.95)',
         backdropFilter: 'blur(24px)',
         WebkitBackdropFilter: 'blur(24px)',
         display: 'flex',
@@ -90,9 +90,9 @@ export default function CertificateLightbox({ certificates, activeIndex, onClose
             style={{
               padding: '0.4rem 0.85rem',
               borderRadius: '9999px',
-              background: 'rgba(0, 242, 254, 0.15)',
-              border: '1px solid rgba(0, 242, 254, 0.4)',
-              color: '#00f2fe',
+              background: 'rgba(6, 182, 212, 0.15)',
+              border: '1px solid rgba(6, 182, 212, 0.4)',
+              color: '#06B6D4',
               fontFamily: 'var(--font-mono)',
               fontSize: '0.85rem',
               fontWeight: '700',
@@ -104,7 +104,7 @@ export default function CertificateLightbox({ certificates, activeIndex, onClose
             <Award size={15} />
             <span>{activeIndex + 1} / {certificates.length}</span>
           </div>
-          <span style={{ color: '#fff', fontWeight: '700', fontSize: '1rem' }} className="cert-title-top">
+          <span style={{ color: '#F8FAFC', fontWeight: '700', fontSize: '1rem' }} className="cert-title-top">
             {current.title}
           </span>
         </div>
@@ -118,12 +118,12 @@ export default function CertificateLightbox({ certificates, activeIndex, onClose
               width: '40px',
               height: '40px',
               borderRadius: '50%',
-              background: 'rgba(255, 255, 255, 0.08)',
-              border: '1px solid rgba(255, 255, 255, 0.15)',
+              background: '#1E293B',
+              border: '1px solid rgba(148, 163, 184, 0.2)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              color: '#fff',
+              color: '#F8FAFC',
               cursor: 'pointer',
               transition: 'all 0.2s',
             }}
@@ -140,12 +140,12 @@ export default function CertificateLightbox({ certificates, activeIndex, onClose
               width: '40px',
               height: '40px',
               borderRadius: '50%',
-              background: 'rgba(255, 255, 255, 0.08)',
-              border: '1px solid rgba(255, 255, 255, 0.15)',
+              background: '#1E293B',
+              border: '1px solid rgba(148, 163, 184, 0.2)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              color: '#fff',
+              color: '#F8FAFC',
               cursor: 'pointer',
               textDecoration: 'none',
               transition: 'all 0.2s',
@@ -187,13 +187,13 @@ export default function CertificateLightbox({ certificates, activeIndex, onClose
           width: '50px',
           height: '50px',
           borderRadius: '50%',
-          background: 'rgba(15, 23, 42, 0.8)',
-          border: '1px solid rgba(0, 242, 254, 0.3)',
-          boxShadow: '0 0 20px rgba(0, 242, 254, 0.2)',
+          background: '#1E293B',
+          border: '1px solid rgba(6, 182, 212, 0.4)',
+          boxShadow: '0 0 20px rgba(6, 182, 212, 0.25)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: '#00f2fe',
+          color: '#06B6D4',
           cursor: 'pointer',
           transition: 'all 0.2s ease',
         }}
@@ -212,13 +212,13 @@ export default function CertificateLightbox({ certificates, activeIndex, onClose
           width: '50px',
           height: '50px',
           borderRadius: '50%',
-          background: 'rgba(15, 23, 42, 0.8)',
-          border: '1px solid rgba(0, 242, 254, 0.3)',
-          boxShadow: '0 0 20px rgba(0, 242, 254, 0.2)',
+          background: '#1E293B',
+          border: '1px solid rgba(6, 182, 212, 0.4)',
+          boxShadow: '0 0 20px rgba(6, 182, 212, 0.25)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: '#00f2fe',
+          color: '#06B6D4',
           cursor: 'pointer',
           transition: 'all 0.2s ease',
         }}
@@ -239,9 +239,9 @@ export default function CertificateLightbox({ certificates, activeIndex, onClose
           justifyContent: 'center',
           overflow: 'auto',
           borderRadius: '1rem',
-          border: '1px solid rgba(0, 242, 254, 0.35)',
-          boxShadow: '0 25px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 242, 254, 0.25)',
-          background: '#070c18',
+          border: '1px solid rgba(6, 182, 212, 0.35)',
+          boxShadow: '0 25px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(6, 182, 212, 0.25)',
+          background: '#0F172A',
         }}
       >
         <img
@@ -266,16 +266,16 @@ export default function CertificateLightbox({ certificates, activeIndex, onClose
           marginTop: '1.25rem',
           textAlign: 'center',
           padding: '0.75rem 1.75rem',
-          background: 'rgba(15, 23, 42, 0.8)',
+          background: '#1E293B',
           borderRadius: '9999px',
-          border: '1px solid rgba(255, 255, 255, 0.1)',
+          border: '1px solid rgba(148, 163, 184, 0.2)',
           backdropFilter: 'blur(12px)',
         }}
       >
-        <span style={{ color: '#00f2fe', fontWeight: '700', marginRight: '0.5rem' }}>
+        <span style={{ color: '#06B6D4', fontWeight: '700', marginRight: '0.5rem' }}>
           {current.issuer}:
         </span>
-        <span style={{ color: '#cbd5e1', fontSize: '0.95rem' }}>
+        <span style={{ color: '#94A3B8', fontSize: '0.95rem' }}>
           {current.title}
         </span>
       </div>
@@ -287,8 +287,8 @@ export default function CertificateLightbox({ certificates, activeIndex, onClose
         }
         .nav-arrow-btn:hover {
           transform: scale(1.1);
-          background: rgba(0, 242, 254, 0.2) !important;
-          border-color: #00f2fe !important;
+          background: rgba(6, 182, 212, 0.2) !important;
+          border-color: #06B6D4 !important;
         }
         @media (max-width: 640px) {
           .cert-title-top {

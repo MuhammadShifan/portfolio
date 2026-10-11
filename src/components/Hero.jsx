@@ -67,7 +67,7 @@ export default function Hero() {
       particleCount: 80,
       spread: 70,
       origin: { y: 0.6 },
-      colors: ['#00f2fe', '#a855f7', '#10b981', '#ffffff']
+      colors: ['#06B6D4', '#38bdf8', '#F8FAFC', '#1E293B']
     });
 
     const link = document.createElement('a');
@@ -126,7 +126,7 @@ export default function Hero() {
                 marginBottom: '1.5rem',
               }}
             >
-              <span style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.85rem)', fontWeight: '700', color: '#e2e8f0' }}>
+              <span style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.85rem)', fontWeight: '700', color: '#F8FAFC' }}>
                 {' '}
               </span>
               <span
@@ -135,7 +135,7 @@ export default function Hero() {
                   fontSize: 'clamp(1.25rem, 2.5vw, 1.85rem)',
                   fontWeight: '800',
                   fontFamily: 'var(--font-heading)',
-                  borderRight: '3px solid #00f2fe',
+                  borderRight: '3px solid #06B6D4',
                   paddingRight: '4px',
                   animation: 'blink 0.8s infinite',
                 }}
@@ -148,7 +148,7 @@ export default function Hero() {
             <p
               style={{
                 fontSize: '1.125rem',
-                color: '#94a3b8',
+                color: '#94A3B8',
                 lineHeight: 1.7,
                 maxWidth: '600px',
                 marginBottom: '2.25rem',
@@ -156,10 +156,10 @@ export default function Hero() {
               }}
             >
               Motivated Full Stack Developer specializing in the{' '}
-              <strong style={{ color: '#00f2fe', fontWeight: '600' }}>MERN stack</strong> and cross-platform mobile application development with{' '}
-              <strong style={{ color: '#00f2fe', fontWeight: '600' }}>React Native</strong>. Experienced in building scalable, responsive web applications and seamless mobile experiences. Proficient in RESTful API development, containerization with{' '}
-              <strong style={{ color: '#00f2fe', fontWeight: '600' }}>Docker</strong>, and modern{' '}
-              <strong style={{ color: '#00f2fe', fontWeight: '600' }}>CI/CD workflows</strong>. Passionate about delivering robust full-stack solutions across both web and mobile platforms.
+              <strong style={{ color: '#06B6D4', fontWeight: '600' }}>MERN stack</strong> and cross-platform mobile application development with{' '}
+              <strong style={{ color: '#06B6D4', fontWeight: '600' }}>React Native</strong>. Experienced in building scalable, responsive web applications and seamless mobile experiences. Proficient in RESTful API development, containerization with{' '}
+              <strong style={{ color: '#06B6D4', fontWeight: '600' }}>Docker</strong>, and modern{' '}
+              <strong style={{ color: '#06B6D4', fontWeight: '600' }}>CI/CD workflows</strong>. Passionate about delivering robust full-stack solutions across both web and mobile platforms.
             </p>
 
             {/* Call to Action Buttons */}
@@ -220,10 +220,10 @@ export default function Hero() {
                 alignItems: 'center',
                 gap: '1rem',
                 paddingTop: '1.5rem',
-                borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+                borderTop: '1px solid rgba(148, 163, 184, 0.15)',
               }}
             >
-              <span style={{ fontSize: '0.85rem', color: '#64748b', fontFamily: 'var(--font-mono)' }}>CONNECT:</span>
+              <span style={{ fontSize: '0.85rem', color: '#94A3B8', fontFamily: 'var(--font-mono)' }}>CONNECT:</span>
 
               <a
                 href="https://github.com"
@@ -235,12 +235,12 @@ export default function Hero() {
                   width: '40px',
                   height: '40px',
                   borderRadius: '10px',
-                  background: 'rgba(255, 255, 255, 0.04)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  background: '#1E293B',
+                  border: '1px solid rgba(148, 163, 184, 0.15)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#cbd5e1',
+                  color: '#94A3B8',
                   transition: 'all 0.2s ease',
                 }}
                 className="social-hover"
@@ -256,12 +256,12 @@ export default function Hero() {
                   width: '40px',
                   height: '40px',
                   borderRadius: '10px',
-                  background: 'rgba(255, 255, 255, 0.04)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  background: '#1E293B',
+                  border: '1px solid rgba(148, 163, 184, 0.15)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#cbd5e1',
+                  color: '#94A3B8',
                   transition: 'all 0.2s ease',
                 }}
                 className="social-hover"
@@ -279,12 +279,12 @@ export default function Hero() {
                   width: '40px',
                   height: '40px',
                   borderRadius: '10px',
-                  background: 'rgba(255, 255, 255, 0.04)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  background: '#1E293B',
+                  border: '1px solid rgba(148, 163, 184, 0.15)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#cbd5e1',
+                  color: '#94A3B8',
                   transition: 'all 0.2s ease',
                 }}
                 className="social-hover"
@@ -302,12 +302,12 @@ export default function Hero() {
                   width: '40px',
                   height: '40px',
                   borderRadius: '10px',
-                  background: 'rgba(255, 255, 255, 0.04)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  background: '#1E293B',
+                  border: '1px solid rgba(148, 163, 184, 0.15)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#cbd5e1',
+                  color: '#94A3B8',
                   transition: 'all 0.2s ease',
                 }}
                 className="social-hover"
@@ -325,12 +325,12 @@ export default function Hero() {
                   width: '40px',
                   height: '40px',
                   borderRadius: '10px',
-                  background: 'rgba(255, 255, 255, 0.04)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  background: '#1E293B',
+                  border: '1px solid rgba(148, 163, 184, 0.15)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#cbd5e1',
+                  color: '#94A3B8',
                   transition: 'all 0.2s ease',
                 }}
                 className="social-hover"
@@ -358,7 +358,7 @@ export default function Hero() {
                 width: '130%',
                 height: '130%',
                 borderRadius: '50%',
-                background: 'radial-gradient(circle, rgba(0, 242, 254, 0.18) 0%, rgba(168, 85, 247, 0.15) 45%, transparent 70%)',
+                background: 'radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, transparent 70%)',
                 filter: 'blur(50px)',
                 zIndex: 0,
                 pointerEvents: 'none',
@@ -386,9 +386,9 @@ export default function Hero() {
                   position: 'relative',
                   borderRadius: '2rem',
                   padding: '0.65rem',
-                  background: 'linear-gradient(135deg, rgba(0, 242, 254, 0.25) 0%, rgba(168, 85, 247, 0.2) 50%, rgba(236, 72, 153, 0.15) 100%)',
-                  border: '1px solid rgba(0, 242, 254, 0.4)',
-                  boxShadow: '0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 45px rgba(0, 242, 254, 0.25), 0 0 30px rgba(168, 85, 247, 0.2)',
+                  background: 'linear-gradient(135deg, rgba(6, 182, 212, 0.25) 0%, rgba(30, 41, 59, 0.8) 100%)',
+                  border: '1px solid rgba(6, 182, 212, 0.4)',
+                  boxShadow: '0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 35px rgba(6, 182, 212, 0.25)',
                   backdropFilter: 'blur(20px)',
                   animation: 'floatContinuous 6s ease-in-out infinite',
                 }}
@@ -401,7 +401,7 @@ export default function Hero() {
                     aspectRatio: '16 / 10',
                     borderRadius: '1.6rem',
                     overflow: 'hidden',
-                    background: '#030712',
+                    background: '#0F172A',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -424,7 +424,7 @@ export default function Hero() {
                     style={{
                       position: 'absolute',
                       inset: 0,
-                      boxShadow: 'inset 0 0 30px rgba(3, 7, 18, 0.6)',
+                      boxShadow: 'inset 0 0 30px rgba(15, 23, 42, 0.6)',
                       pointerEvents: 'none',
                     }}
                   />
@@ -439,13 +439,13 @@ export default function Hero() {
                     transform: 'translateX(-50%)',
                     padding: '0.45rem 1.15rem',
                     borderRadius: '9999px',
-                    background: 'rgba(7, 12, 27, 0.92)',
-                    border: '1px solid rgba(0, 242, 254, 0.5)',
-                    boxShadow: '0 10px 25px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 242, 254, 0.3)',
+                    background: 'rgba(15, 23, 42, 0.92)',
+                    border: '1px solid rgba(6, 182, 212, 0.4)',
+                    boxShadow: '0 10px 25px rgba(0, 0, 0, 0.8), 0 0 15px rgba(6, 182, 212, 0.25)',
                     display: 'flex',
                     alignItems: 'center',
                     gap: '0.5rem',
-                    color: '#00f2fe',
+                    color: '#06B6D4',
                     fontWeight: '700',
                     fontSize: 'clamp(0.7rem, 2.4vw, 0.82rem)',
                     fontFamily: 'var(--font-mono)',
@@ -506,14 +506,14 @@ export default function Hero() {
           }
         }
         .social-hover:hover {
-          background: rgba(0, 242, 254, 0.15) !important;
-          border-color: rgba(0, 242, 254, 0.5) !important;
-          color: #00f2fe !important;
+          background: rgba(6, 182, 212, 0.15) !important;
+          border-color: rgba(6, 182, 212, 0.5) !important;
+          color: #06B6D4 !important;
           transform: translateY(-3px);
-          box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+          box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
         }
         @keyframes blink {
-          0%, 100% { border-color: #00f2fe; }
+          0%, 100% { border-color: #06B6D4; }
           50% { border-color: transparent; }
         }
       `}</style>

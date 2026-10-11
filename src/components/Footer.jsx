@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowUp, Mail, Phone, Heart, Terminal, Sparkles } from 'lucide-react';
+import { ArrowUp, Mail, Phone } from 'lucide-react';
 import { Github, Linkedin, Instagram, WhatsApp } from './Icons';
 import { soundFx } from '../utils/sound';
 
@@ -47,8 +47,8 @@ export default function Footer() {
     <footer
       style={{
         position: 'relative',
-        background: 'linear-gradient(180deg, #030712 0%, #02040a 100%)',
-        borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+        background: '#0F172A',
+        borderTop: '1px solid rgba(148, 163, 184, 0.15)',
         padding: '4rem 0 2rem 0',
         zIndex: 2,
       }}
@@ -71,26 +71,26 @@ export default function Footer() {
                   width: '40px',
                   height: '40px',
                   borderRadius: '12px',
-                  background: 'linear-gradient(135deg, rgba(0, 242, 254, 0.2) 0%, rgba(168, 85, 247, 0.2) 100%)',
-                  border: '1px solid rgba(0, 242, 254, 0.5)',
+                  background: 'rgba(6, 182, 212, 0.15)',
+                  border: '1px solid #06B6D4',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#00f2fe',
+                  color: '#06B6D4',
                   fontWeight: '800',
                   fontFamily: 'var(--font-mono)',
                   fontSize: '1.05rem',
-                  boxShadow: '0 0 15px rgba(0, 242, 254, 0.3)',
+                  boxShadow: '0 0 15px rgba(6, 182, 212, 0.25)',
                 }}
               >
                 MS
               </div>
-              <h3 style={{ fontSize: '1.25rem', color: '#fff', fontWeight: '800' }}>
+              <h3 style={{ fontSize: '1.25rem', color: '#F8FAFC', fontWeight: '800' }}>
                 Muhammad Shifan S
               </h3>
             </div>
 
-            <p style={{ color: '#94a3b8', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
+            <p style={{ color: '#94A3B8', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
               Entry-Level Full Stack Developer specialized in the MERN ecosystem. Building robust, accessible, and high-performance digital experiences.
             </p>
 
@@ -102,11 +102,11 @@ export default function Footer() {
                 gap: '0.5rem',
                 padding: '0.4rem 0.85rem',
                 borderRadius: '9999px',
-                background: 'rgba(255, 255, 255, 0.04)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
+                background: '#1E293B',
+                border: '1px solid rgba(148, 163, 184, 0.15)',
                 fontFamily: 'var(--font-mono)',
                 fontSize: '0.8rem',
-                color: '#38bdf8',
+                color: '#06B6D4',
               }}
             >
               <span className="status-dot"></span>
@@ -116,7 +116,7 @@ export default function Footer() {
 
           {/* Col 2: Navigation Links */}
           <div>
-            <h4 style={{ fontSize: '1rem', color: '#fff', fontWeight: '700', marginBottom: '1.25rem', fontFamily: 'var(--font-mono)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+            <h4 style={{ fontSize: '1rem', color: '#F8FAFC', fontWeight: '700', marginBottom: '1.25rem', fontFamily: 'var(--font-mono)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
               Quick Navigation
             </h4>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem' }}>
@@ -139,7 +139,7 @@ export default function Footer() {
                   }}
                   onMouseEnter={() => soundFx.playHover()}
                   style={{
-                    color: '#94a3b8',
+                    color: '#94A3B8',
                     fontSize: '0.875rem',
                     transition: 'color 0.2s ease',
                   }}
@@ -153,24 +153,24 @@ export default function Footer() {
 
           {/* Col 3: Direct Connect & Socials */}
           <div>
-            <h4 style={{ fontSize: '1rem', color: '#fff', fontWeight: '700', marginBottom: '1.25rem', fontFamily: 'var(--font-mono)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+            <h4 style={{ fontSize: '1rem', color: '#F8FAFC', fontWeight: '700', marginBottom: '1.25rem', fontFamily: 'var(--font-mono)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
               Connect & Inquiries
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1.25rem' }}>
               <a
                 href="mailto:muhammasshifan@gmail.com"
-                style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#cbd5e1', fontSize: '0.875rem' }}
+                style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#94A3B8', fontSize: '0.875rem' }}
                 className="footer-link"
               >
-                <Mail size={15} color="#00f2fe" />
+                <Mail size={15} color="#06B6D4" />
                 <span>muhammasshifan@gmail.com</span>
               </a>
               <a
                 href="tel:+916381403151"
-                style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#cbd5e1', fontSize: '0.875rem' }}
+                style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#94A3B8', fontSize: '0.875rem' }}
                 className="footer-link"
               >
-                <Phone size={15} color="#a855f7" />
+                <Phone size={15} color="#06B6D4" />
                 <span>+91 6381403151</span>
               </a>
             </div>
@@ -187,12 +187,12 @@ export default function Footer() {
                   width: '38px',
                   height: '38px',
                   borderRadius: '10px',
-                  background: 'rgba(255, 255, 255, 0.05)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  background: '#1E293B',
+                  border: '1px solid rgba(148, 163, 184, 0.15)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#cbd5e1',
+                  color: '#94A3B8',
                   transition: 'all 0.2s',
                 }}
                 className="social-hover"
@@ -210,12 +210,12 @@ export default function Footer() {
                   width: '38px',
                   height: '38px',
                   borderRadius: '10px',
-                  background: 'rgba(255, 255, 255, 0.05)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  background: '#1E293B',
+                  border: '1px solid rgba(148, 163, 184, 0.15)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#cbd5e1',
+                  color: '#94A3B8',
                   transition: 'all 0.2s',
                 }}
                 className="social-hover"
@@ -233,12 +233,12 @@ export default function Footer() {
                   width: '38px',
                   height: '38px',
                   borderRadius: '10px',
-                  background: 'rgba(255, 255, 255, 0.05)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  background: '#1E293B',
+                  border: '1px solid rgba(148, 163, 184, 0.15)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#cbd5e1',
+                  color: '#94A3B8',
                   transition: 'all 0.2s',
                 }}
                 className="social-hover"
@@ -256,12 +256,12 @@ export default function Footer() {
                   width: '38px',
                   height: '38px',
                   borderRadius: '10px',
-                  background: 'rgba(255, 255, 255, 0.05)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  background: '#1E293B',
+                  border: '1px solid rgba(148, 163, 184, 0.15)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#cbd5e1',
+                  color: '#94A3B8',
                   transition: 'all 0.2s',
                 }}
                 className="social-hover"
@@ -279,12 +279,12 @@ export default function Footer() {
                   width: '38px',
                   height: '38px',
                   borderRadius: '10px',
-                  background: 'rgba(255, 255, 255, 0.05)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  background: '#1E293B',
+                  border: '1px solid rgba(148, 163, 184, 0.15)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: '#cbd5e1',
+                  color: '#94A3B8',
                   transition: 'all 0.2s',
                 }}
                 className="social-hover"
@@ -299,18 +299,18 @@ export default function Footer() {
         <div
           style={{
             paddingTop: '2rem',
-            borderTop: '1px solid rgba(255, 255, 255, 0.06)',
+            borderTop: '1px solid rgba(148, 163, 184, 0.12)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
             flexWrap: 'wrap',
             gap: '1rem',
             fontSize: '0.85rem',
-            color: '#64748b',
+            color: '#94A3B8',
           }}
         >
           <div>
-            © {new Date().getFullYear()} <strong style={{ color: '#cbd5e1' }}>Muhammad Shifan S</strong>. All rights reserved.
+            © {new Date().getFullYear()} <strong style={{ color: '#F8FAFC' }}>Muhammad Shifan S</strong>. All rights reserved.
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
@@ -330,14 +330,14 @@ export default function Footer() {
           width: '48px',
           height: '48px',
           borderRadius: '50%',
-          background: 'rgba(15, 23, 42, 0.85)',
-          border: '1px solid rgba(0, 242, 254, 0.35)',
-          boxShadow: '0 0 25px rgba(0, 242, 254, 0.25)',
+          background: '#1E293B',
+          border: '1px solid rgba(6, 182, 212, 0.35)',
+          boxShadow: '0 0 25px rgba(6, 182, 212, 0.25)',
           backdropFilter: 'blur(12px)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: '#00f2fe',
+          color: '#06B6D4',
           zIndex: 90,
           cursor: 'pointer',
           transition: 'all 0.3s ease',
@@ -352,20 +352,20 @@ export default function Footer() {
 
       <style>{`
         .footer-link:hover {
-          color: #00f2fe !important;
+          color: #06B6D4 !important;
           transform: translateX(4px);
         }
         .top-btn:hover {
-          background: rgba(0, 242, 254, 0.2) !important;
+          background: rgba(6, 182, 212, 0.2) !important;
           transform: translateY(-4px) scale(1.1) !important;
-          box-shadow: 0 0 30px rgba(0, 242, 254, 0.5) !important;
+          box-shadow: 0 0 30px rgba(6, 182, 212, 0.4) !important;
         }
         .social-hover:hover {
-          background: rgba(0, 242, 254, 0.15) !important;
-          border-color: rgba(0, 242, 254, 0.5) !important;
-          color: #00f2fe !important;
+          background: rgba(6, 182, 212, 0.15) !important;
+          border-color: rgba(6, 182, 212, 0.5) !important;
+          color: #06B6D4 !important;
           transform: translateY(-3px);
-          box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+          box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
         }
       `}</style>
     </footer>

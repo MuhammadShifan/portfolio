@@ -92,7 +92,7 @@ export default function App() {
   };
 
   return (
-    <div className="portfolio-app" style={{ position: 'relative', minHeight: '100vh', background: '#030712' }}>
+    <div className="portfolio-app" style={{ position: 'relative', minHeight: '100vh', background: 'var(--bg-primary, #0F172A)' }}>
       {/* 3D Interactive Three.js Particle Universe Background */}
       <ThreeBackground />
 
