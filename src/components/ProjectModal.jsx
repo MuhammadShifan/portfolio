@@ -191,7 +191,7 @@ export default function ProjectModal({ project, onClose }) {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', borderBottom: '1px solid rgba(148, 163, 184, 0.1)', paddingBottom: '0.4rem' }}>
                 <span style={{ color: '#94A3B8' }}>Frontend:</span>
-                <span style={{ color: '#F8FAFC', fontWeight: '600' }}>{project.techFrontend || 'React.js, Tailwind CSS'}</span>
+                <span style={{ color: '#F8FAFC', fontWeight: '600' }}>{project.techFrontend || 'React.js'}</span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', borderBottom: '1px solid rgba(148, 163, 184, 0.1)', paddingBottom: '0.4rem' }}>
                 <span style={{ color: '#94A3B8' }}>Backend:</span>

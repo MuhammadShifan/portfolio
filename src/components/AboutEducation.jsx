@@ -9,7 +9,7 @@ export default function AboutEducation() {
     { label: 'Internships Completed', value: '4+', icon: <Briefcase size={22} color="#06B6D4" />, color: '#06B6D4' },
     { label: 'Projects Engineered', value: '10+', icon: <Code size={22} color="#06B6D4" />, color: '#06B6D4' },
     { label: 'Certifications Earned', value: '8+', icon: <Award size={22} color="#06B6D4" />, color: '#06B6D4' },
-    { label: 'Academic CGPA', value: '7.2', icon: <GraduationCap size={22} color="#06B6D4" />, color: '#06B6D4' },
+    { label: 'Academic CGPA', value: '7', icon: <GraduationCap size={22} color="#06B6D4" />, color: '#06B6D4' },
   ];
 
   const educations = [
@@ -25,7 +25,7 @@ export default function AboutEducation() {
       degree: 'Bachelor of Commerce (Computer Applications) - B.Com CA',
       institution: 'SRM Trichy Arts and Science College, Bharathidasan University',
       duration: '2023 – 2026',
-      grade: 'CGPA: 7.2 / 10 (76%)',
+      grade: 'CGPA: 7 / 10 (68%)',
       desc: 'Built strong foundations in programming logic, relational databases, business algorithms, and web application development while actively building full-stack projects.',
       current: false,
     },

@@ -274,7 +274,7 @@ export default function Projects() {
         'Interactive quizzes, certificate issuance upon course completion'
       ],
       tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Netlify & Render CI/CD'],
-      techFrontend: 'React.js, Tailwind CSS, Context API',
+      techFrontend: 'React.js, Context API',
       techBackend: 'Node.js, Express.js REST API, JSON Web Tokens',
       techDatabase: 'MongoDB Atlas, Mongoose Models',
       techDeployment: 'Netlify (Frontend) + Render (Backend) CI/CD Pipeline',
@@ -365,8 +365,8 @@ export default function Projects() {
     //     'Instant search and tag-based task filtering',
     //     'Smooth animations and zero-latency local storage state syncing'
     //   ],
-    //   tags: ['React.js', 'Drag & Drop API', 'Tailwind CSS', 'Web Storage'],
-    //   techFrontend: 'React.js, HTML5 Drag & Drop API, Tailwind',
+    //   tags: ['React.js', 'Drag & Drop API', 'Web Storage'],
+    //   techFrontend: 'React.js, HTML5 Drag & Drop API,
     //   techBackend: 'Client-side state management',
     //   techDatabase: 'Browser LocalStorage Engine',
     //   techDeployment: 'Netlify Automated Pipeline',

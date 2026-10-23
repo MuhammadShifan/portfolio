@@ -17,7 +17,7 @@ export default function TechnicalSkills() {
     { name: 'React.js', category: 'frontend', icon: '⚛️', color: '#06B6D4', bg: 'rgba(6, 182, 212, 0.1)' },
     { name: 'HTML5 & Semantic Web', category: 'frontend', icon: '🌐', color: '#e34f26', bg: 'rgba(227, 79, 38, 0.1)' },
     { name: 'CSS3 & Modern CSS', category: 'frontend', icon: '🎨', color: '#264de4', bg: 'rgba(38, 77, 228, 0.1)' },
-    { name: 'Tailwind CSS', category: 'frontend', icon: '🌊', color: '#38bdf8', bg: 'rgba(56, 189, 248, 0.1)' },
+   
     { name: 'Bootstrap 5', category: 'frontend', icon: '🅱️', color: '#7952b3', bg: 'rgba(121, 82, 179, 0.1)' },
     { name: 'Responsive UI/UX', category: 'frontend', icon: '📱', color: '#10b981', bg: 'rgba(16, 185, 129, 0.1)' },
 
@@ -45,7 +45,7 @@ export default function TechnicalSkills() {
 
   const marqueeSkills = [
     'JavaScript ES6+', 'React.js', 'Node.js', 'Express.js', 'MongoDB',
-    'HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap', 'REST APIs',
+    'HTML5', 'CSS3', 'Bootstrap', 'REST APIs',
     'Docker', 'AWS Cloud', 'Git & GitHub', 'JWT Auth', 'VS Code'
   ];
 

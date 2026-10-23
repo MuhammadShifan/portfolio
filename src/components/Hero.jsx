@@ -155,8 +155,8 @@ export default function Hero() {
               }}
             >
               Motivated Full Stack Developer specializing in the{' '}
-              <strong style={{ color: '#06B6D4', fontWeight: '600' }}>MERN stack</strong> and cross-platform mobile application development with{' '}
-              <strong style={{ color: '#06B6D4', fontWeight: '600' }}>React Native</strong>. Experienced in building scalable, responsive web applications and seamless mobile experiences. Proficient in RESTful API development, containerization with{' '}
+              <strong style={{ color: '#06B6D4', fontWeight: '600' }}>MERN stack</strong>
+             . Experienced in building scalable, responsive web applications and seamless mobile experiences. Proficient in RESTful API development, containerization with{' '}
               <strong style={{ color: '#06B6D4', fontWeight: '600' }}>Docker</strong>, and modern{' '}
               <strong style={{ color: '#06B6D4', fontWeight: '600' }}>CI/CD workflows</strong>. Passionate about delivering robust full-stack solutions across both web and mobile platforms.
             </p>
