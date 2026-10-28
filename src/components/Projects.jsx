@@ -278,8 +278,8 @@ export default function Projects() {
       techBackend: 'Node.js, Express.js REST API, JSON Web Tokens',
       techDatabase: 'MongoDB Atlas, Mongoose Models',
       techDeployment: 'Netlify (Frontend) + Render (Backend) CI/CD Pipeline',
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://github.com',
+      githubUrl: 'https://github.com/MuhammadShifan/vinsup',
+      liveUrl: 'https://github.com/MuhammadShifan/vinsup',
     },
     {
       id: 'stock-invoice',
@@ -301,8 +301,8 @@ export default function Projects() {
       techBackend: 'Node.js, Express.js REST APIs, PDFKit Generator',
       techDatabase: 'MongoDB Atlas with transactional consistency',
       techDeployment: 'Cloud deployment with automated database backup',
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://github.com',
+      githubUrl: 'https://github.com/MuhammadShifan/FOOTWEAR-WAREHOUSE-GST-BILLING-SYSTEM',
+      liveUrl: 'https://github.com/MuhammadShifan/FOOTWEAR-WAREHOUSE-GST-BILLING-SYSTEM',
     },
     {
       id: 'coffee-ecommerce',
@@ -324,8 +324,8 @@ export default function Projects() {
       techBackend: 'Node.js, Express.js, Razorpay Node SDK',
       techDatabase: 'MongoDB Atlas, Aggregation Pipelines',
       techDeployment: 'Render Backend + Netlify Frontend CI/CD',
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://github.com',
+      githubUrl: 'https://github.com/MuhammadShifan/nathan-coffee-ecommerce',
+      liveUrl: 'https://github.com/MuhammadShifan/nathan-coffee-ecommerce',
     },
     // {
     //   id: 'gym-buddy',

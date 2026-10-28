@@ -154,11 +154,10 @@ export default function Hero() {
                 textAlign: 'justify',
               }}
             >
-              Motivated Full Stack Developer specializing in the{' '}
+              Motivated entry-level Full Stack Developer with hands-on experience building web applications using the {' '}
               <strong style={{ color: '#06B6D4', fontWeight: '600' }}>MERN stack</strong>
-             . Experienced in building scalable, responsive web applications and seamless mobile experiences. Proficient in RESTful API development, containerization with{' '}
-              <strong style={{ color: '#06B6D4', fontWeight: '600' }}>Docker</strong>, and modern{' '}
-              <strong style={{ color: '#06B6D4', fontWeight: '600' }}>CI/CD workflows</strong>. Passionate about delivering robust full-stack solutions across both web and mobile platforms.
+             . Skilled in developing responsive user interfaces, REST APIs, and database-driven applications through practical projects, and modern{' '}
+              <strong style={{ color: '#06B6D4', fontWeight: '600' }}>CI/CD workflows</strong>. Currently expanding my technical knowledge in React Native, AWS Cloud, and Artificial Intelligence, Machine Learning, and Deep Learning (AI/ML/DL). Eager to contribute to real-world software development projects while continuously improving my skills.
             </p>
 
             {/* Call to Action Buttons */}
@@ -225,7 +224,7 @@ export default function Hero() {
               <span style={{ fontSize: '0.85rem', color: '#94A3B8', fontFamily: 'var(--font-mono)' }}>CONNECT:</span>
 
               <a
-                href="https://github.com"
+                href="https://github.com/MuhammadShifan"
                 target="_blank"
                 rel="noopener noreferrer"
                 onMouseEnter={() => soundFx.playHover()}
@@ -269,7 +268,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/muhammad-shifan-194431341/"
                 target="_blank"
                 rel="noopener noreferrer"
                 onMouseEnter={() => soundFx.playHover()}

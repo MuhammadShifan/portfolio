@@ -178,7 +178,7 @@ export default function Footer() {
             {/* Social Icons */}
             <div style={{ display: 'flex', gap: '0.65rem', flexWrap: 'wrap' }}>
               <a
-                href="https://github.com"
+                href="https://github.com/MuhammadShifan"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="GitHub"
@@ -201,7 +201,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/muhammad-shifan-194431341/"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="LinkedIn"
